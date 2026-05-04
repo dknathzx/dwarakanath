@@ -1,5 +1,10 @@
-import React from "react";
-import '../src/App.css'
+import React, { useState } from "react";
+import CookieBanner from "./components/CookieBanner/CookieBanner";
+import HireMe from "./components/HireMe/HireMe";
+import '../src/App.css';
+import Intro from "./components/intro/intro";
+import Contact from "./components/Contact/Contact";
+import PageTransition from "./components/PageTransition/PageTransition";
 import Fourth from "./components/Fourth/Fourth";
 import Home from "./components/Home/Home";
 import Second from "./components/Second/Second";
@@ -10,20 +15,33 @@ import Seven from "./components/Seven/Seven";
 import Eight from "./components/Eight/Eight";
 import Nine from "./components/Nine/Nine";
 import Last from "./components/Last/Last";
+
 const App = () => {
+  const [introComplete, setIntroComplete] = useState(false);
+
   return (
-  <div>
-    <Home></Home>
-    <Second></Second>
-    <Third></Third>
-    <Fourth></Fourth>
-    <Fifth></Fifth>
-    <Six></Six>
-    <Seven></Seven>
-    <Eight></Eight>
-    <Nine></Nine>
-    <Last></Last>
-  </div>
+    <div>
+      <Contact />
+      <CookieBanner />
+      <HireMe />
+      {!introComplete && (
+        <Intro onComplete={() => setIntroComplete(true)} />
+      )}
+      {introComplete && (
+        <div>
+          <PageTransition><Home /></PageTransition>
+          <PageTransition><Second /></PageTransition>
+          <PageTransition><Third /></PageTransition>
+          <PageTransition><Fourth /></PageTransition>
+          <PageTransition><Fifth /></PageTransition>
+          <PageTransition><Six /></PageTransition>
+          <PageTransition><Seven /></PageTransition>
+          <PageTransition><Eight /></PageTransition>
+          <PageTransition><Nine /></PageTransition>
+          <PageTransition><Last /></PageTransition>
+        </div>
+      )}
+    </div>
   );
 };
 

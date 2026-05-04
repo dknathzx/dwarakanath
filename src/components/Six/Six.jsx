@@ -5,24 +5,24 @@ export const Six = () => {
     <div className="six-line"></div>
 <div class="row">
   <div class="column">
-    <div className="sotd">site of the day</div>
-    <div className="st-head">Awards</div>
-    <div className="num">9</div>
+    <div className="sotd">founded</div>
+    <div className="st-head">LOGEAUM</div>
+    <div className="num">1</div>
   </div>
   <div class="column">
-    <div className="sotd-two">site of the month</div>
-    <div className="st-head-two">winners</div>
-    <div className="num-two">1</div>
+    <div className="sotd-two">internship projects</div>
+    <div className="st-head-two">KONE</div>
+    <div className="num-two">2</div>
   </div>
   <div class="column">
-    <div className="sotd-three">fwa of the day</div>
-    <div className="st-head">Awards</div>
-    <div className="num">6</div>
+    <div className="sotd-three">years of study</div>
+    <div className="st-head">MSc + BSc</div>
+    <div className="num">5</div>
   </div>
   <div class="column">
-  <div className="sotd-three">acclaimed</div>
-    <div className="st-head">mentions</div>
-    <div className="num-four">8</div>
+  <div className="sotd-three">open to work</div>
+    <div className="st-head">globally</div>
+    <div className="num-four">∞</div>
   </div>
 </div>
     <div className="six-line-two"></div>

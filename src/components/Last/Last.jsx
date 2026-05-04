@@ -1,28 +1,29 @@
 import React from "react";
 import "./last.css";
-import lega from "../assets/stamp.png";
+import stamp from "../assets/logoheader.png";
+
+
+
 export const Last = () => {
-  return (<div className="last">
-        <div className="last-line"></div>
-        <div class="chaniru">
-            <div class="marquee">
-                <div class="img1">Let's</div>  
-                <div class="img1">create</div> 
-                <div class="img1">something</div> 
-                <div class="img1">togehter</div>
-                <div class="img1">
-                    <div className="last-blk">@chaniru.lk</div>
-                </div>
-            </div>
+  return (
+    <div className="last">
+      <div className="last-line"></div>
+      <div className="Dwarakanath">
+        <div className="marquee">
+          <div className="img1"></div>
         </div>
-        <div className="last-line-two"></div>
-        <div className="names">&#169;chaniru.lk</div>
-        <img src={lega} alt="legal" className="legal" />
-        <div className="legal-text">Legal</div>
-        <a href="https://www.instagram.com/chaniru.lk/" className="last-link-one">Instagram</a>
-        <a href="https://www.instagram.com/chaniru.lk/" className="last-link-two">Twitter</a>
-        <a href="https://www.instagram.com/chaniru.lk/" className="last-link-three">Behance</a>
-  </div>
+      </div>
+      <div className="last-line-two"></div>
+      <div className="names">&#169;Dwarakanath K Dinesh</div>
+      <img src={stamp} alt="legal" className="legal" />
+      <a href="https://www.linkedin.com/in/dwarakanathk/" className="last-link-one">
+        Linkedin
+      </a>
+      <a href="https://github.com/dknathzx" className="last-link-two">
+        GitHub
+      </a>
+    </div>
   );
 };
+
 export default Last;

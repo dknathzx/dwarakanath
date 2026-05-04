@@ -14,7 +14,7 @@
     color: #c5bdb4;
     text-transform: uppercase;
     font-family: scari;
-    font-size: 16em;
+    font-size: 8em;
     margin-top: 11%;
     left: 5%;
     font-stretch: extra-expanded;
@@ -26,9 +26,9 @@
 }
 .stamp{
     height: auto;
-    width: 280px;
+    width: 0px;
     position: absolute;
-    margin-top: 3.98%;
+    margin-top: 0%;
     right: 2%;
 }
 .four-line{
@@ -42,8 +42,8 @@
 }
 .latest{
     position: absolute;
-    font-size: 4.4em;
-    font-family: scari;
+    font-size: 3em;
+    font-family: 'Kings', cursive;
     color: #1c1b19;
     margin-top: 30%;
     left: 2%;
@@ -62,18 +62,18 @@
     position: absolute;
     color: #1c1b19;
     letter-spacing: -2px;
-    font-size: 2.5em;
+    font-size: 2em;
     text-transform: uppercase;
-    margin-top: 50%;
-    font-family: scari;
+    margin-top: 50.3%;
+    font-family: 'Jersey 15 Charted', sans-serif;
     left: 2%;
 }
 .tp-des{
     position: absolute;
-    font-family: gramlight;
+    font-family:  'Jersey 15 Charted', sans-serif;
     color: #1c1b19;
     font-size: 2em;
-    margin-top: 50%;
+    margin-top: 50.3%;
     left: 6.5%;
 }
 .four-line-two{
@@ -136,9 +136,9 @@
     left: 35.5%;
 }
 .four-lin{
-    margin-top: 34%;
-    right: 2%;
-    width: 28%;
+    margin-top: 32%;
+    right:2.5%;
+    width: 20%;
     height: 47px;
     border-bottom: 1px solid #1c1b19;
     position: absolute;
@@ -149,14 +149,14 @@
     letter-spacing: -5px;
     font-family: scari;
     font-size: 5.3em;
-    margin-top: 34%;
+    margin-top: 30%;
     right: 2%;
     text-transform: uppercase;
 }
 .four-lin-del{
     margin-top: 46%;
-    right: 2%;
-    width: 28%;
+    right: 2.5%;
+    width: 20%;
     height: 47px;
     border-bottom: 1px solid #1c1b19;
     position: absolute;
@@ -166,7 +166,7 @@
     position: absolute;
     font-family: scari;
     font-size: 8.5em;
-    margin-top: 42%;
+    margin-top: 40%;
     right: 1%;
     text-transform: uppercase;
     transform: scale(1, 1.5);
@@ -188,7 +188,7 @@
     text-transform: uppercase;
     color: #c5bdb4;
     font-size: 6em;
-    font-family: albaz;
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 1%;
     left: 5%;
 }
@@ -198,13 +198,13 @@
     color: #1c1b19;
     font-family: gramlight;
     margin-top: 52.5%;
-    right: 4%;
+    right: 1%;
 }
 .go-des-two{
     position: absolute;
     font-size: 2em;
     color: #1c1b19;
     font-family: gramlight;
-    margin-top: 60.5%;
-    right: 5.5%;
+    margin-top: 59.7%;
+    right: 0%;
 }

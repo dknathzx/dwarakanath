@@ -15,32 +15,32 @@
     width: 100%;
 }
 .third-line{
-    margin-top: 10%;
-    right: 3%;
+    margin-top: 7%;
+    right: 4%;
     width: 53%;
     height: 47px;
     border-bottom: 1px solid #1c1b19;
     position: absolute;
 }
 .third-line-two{
-    margin-top: 19%;
-    right: 3%;
+    margin-top: 16%;
+    right: 4%;
     width: 53%;
     height: 47px;
     border-bottom: 1px solid #1c1b19;
     position: absolute;
 }
 .third-line-three{
-    margin-top: 28%;
-    right: 3%;
+    margin-top: 24%;
+    right: 4%;
     width: 53%;
     height: 47px;
     border-bottom: 1px solid #1c1b19;
     position: absolute;
 }
 .third-line-four{
-    margin-top: 38%;
-    right: 3%;
+    margin-top: 33%;
+    right: 4%;
     width: 53%;
     height: 47px;
     border-bottom: 1px solid #1c1b19;
@@ -51,7 +51,7 @@
     font-size: 5.5em;
     color: #1c1b19;
     text-transform: uppercase;
-    font-family: scari;
+    font-family: 'Iceland', cursive;  /* ← changed here */
     margin-top: 12%;
     left: 43%;
     transform: scale(1, 1.5);
@@ -65,7 +65,7 @@
     font-size: 5.5em;
     color: #1c1b19;
     text-transform: uppercase;
-    font-family: scari;
+    font-family: 'Iceland', cursive;  /* ← changed here */
     margin-top: 21%;
     left: 43%;
     transform: scale(1, 1.5);
@@ -79,7 +79,7 @@
     font-size: 5.5em;
     color: #1c1b19;
     text-transform: uppercase;
-    font-family: scari;
+    font-family: 'Iceland', cursive;  /* ← changed here */
     margin-top: 30%;
     left: 43%;
     transform: scale(1, 1.5);
@@ -133,7 +133,7 @@
     font-size: 2.5em;
     font-family: gramlight;
     margin-top: 39%;
-    left: 2%;
+    left: 4%;
     text-align: justify;
     color: #1c1b19;
 }

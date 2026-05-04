@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+#cookie-container.cookie-container {
+  position: fixed !important;
+  bottom: 10px !important;
+  left: 600px !important;
+  width: 400px !important;
+  padding: 25px !important;
+  background-color: #000000 !important;
+  border: 1px solid #ff9500 !important;
+  font-family: "Roboto Mono", "Courier New", monospace !important;
+  font-size: 13px !important;
+  letter-spacing: 0.325px !important;
+  text-transform: uppercase !important;
+  box-sizing: border-box !important;
+  z-index: 9999 !important;
+  color: #332e27 !important;
+}
+
+#cookie-container.cookie-container p {
+  margin-bottom: 10px !important;
+  line-height: 1.6 !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+}
+
+#cookie-container .custom-break {
+  display: block !important;
+  height: 10px !important;
+  margin: 15px 0 !important;
+}
+
+#cookie-container .cookieLink {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+  font-weight: 500 !important;
+  position: dynamic !important;
+  font-size: 13px !important;
+}
+
+#cookie-container .cookieLink:hover {
+  color: #ffffff !important;
+  background-color: #ff7b00 !important;
+  
+}
+
+#cookie-container .cookieLink::before {
+  display: none !important;
+}
+
+#buttonContainer {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 15px !important;
+  margin-top: 15px !important;
+}
+
+#cookie-container .cookieButton {
+  background-color: #000000 !important;
+  border: 1px solid #000000 !important;
+  padding: 20px 20px !important;
+  font-family: "Roboto Mono", "Courier New", monospace !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.325px !important;
+  cursor: pointer !important;
+  width: 125px !important;
+  color: #ffffff !important;
+}
+
+#cookie-container .cookieButton:hover {
+  background-color: #ff7b00 !important;
+}
+
+@media (max-width: 600px) {
+  #cookie-container.cookie-container {
+    width: 90% !important;
+    bottom: 10px !important;
+    left: 5% !important;
+    padding: 15px !important;
+    font-size: 11px !important;
+  }
+
+  #cookie-container .cookieButton {
+    padding: 8px 15px !important;
+    width: 100% !important;
+    background-color: #ff7b00 !important;
+  }
+
+  #buttonContainer {
+    flex-direction: column !important;
+    gap: 10px !important;
+    background-color: #ff7b00 !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #cookie-container.cookie-container {
+    width: 70% !important;
+    bottom: 15px !important;
+    left: 15% !important;
+    padding: 12px !important;
+    font-size: 120px !important;
+  }
+
+  #cookie-container .cookieButton {
+    padding: 9px 18px !important;
+    width: 45% !important;
+  }
+
+  #buttonContainer {
+    gap: 12px !important;
+  }
+}

@@ -1,0 +1,113 @@
+.about-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #f5f3ef;
+  z-index: 9999;
+  transform-origin: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.about-close {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  font-size: 1.5em;
+  color: #1c1b19;
+  cursor: pointer;
+  font-family: gramlight;
+  z-index: 99999;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.about-left {
+  flex: 1;
+}
+
+.about-photo {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-tag {
+  font-family: gramlight;
+  font-size: 1em;
+  color: #df7853;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.about-name {
+  font-family: scari;
+  font-size: 3.5em;
+  color: #1c1b19;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  margin: 0;
+}
+
+.about-role {
+  font-family: gramlight;
+  font-size: 1.1em;
+  color: #1c1b19;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.about-bio {
+  font-family: gramlight;
+  font-size: 1em;
+  color: #1c1b19;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.about-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.about-btn {
+  padding: 10px 20px;
+  border: 2px solid #1c1b19;
+  border-radius: 30px;
+  font-family: gramlight;
+  font-size: 0.9em;
+  color: #1c1b19;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px 0px 0px #1c1b19;
+}
+
+.about-btn:hover {
+  background: #1c1b19;
+  color: #c5bdb4;
+  transform: translateY(2px);
+  box-shadow: 0px 0px 0px 0px #1c1b19;
+}

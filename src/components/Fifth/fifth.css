@@ -7,7 +7,7 @@
     color: #1c1b19;
     font-family: gramlight;
     margin-top: 19%;
-    right: 2%;
+    right: 12%;
 }
 .myButton {
     position: absolute;
@@ -28,9 +28,6 @@
 .myButton:hover {
 	color: #bb6a4c;
 } 
-a{
-    position: absolute;
-}
 a:hover {
   color: #000;
 }
@@ -61,4 +58,11 @@ a:hover::before {
     height: 100%;
     width: 100%;
     object-fit: fill;
+}
+.big-block a {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
 }

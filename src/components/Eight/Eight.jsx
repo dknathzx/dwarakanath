@@ -3,18 +3,19 @@ import "./eight.css";
 export const Eight = () => {
   return (<div className="eight">
     <div className="eight-bloc"></div>
-    <p className="art">artisan</p>
+    <p className="art">machine</p>
     <div className="art-des">
-      Over the past 3+ years, I've teamed up <br />
-      with high-profile clients and partnets <br />
-      globally earning mentions & awards from <br />
-      digital platforms like The FWA,
+      Two years. <br />
+Two platforms. <br />
+One mission — <br />
+make machines <br />
+think better.
     </div>
-    <div className="awwwards">awwwards</div>
-    <div className="com">Communication Arts, Site Inspire, <br />
-    Behance, Codrops and many others <br />
-    <b>@chaniru.lk - Instagram</b>
-    </div>
+ <div className="com">
+  Databricks, LangChain, OpenAI GPT-4, <br />
+  Streamlit, FastAPI and many more <br />
+  <b>@dknathzx - GitHub</b>
+</div>
     <div class="testimonials-section">
     <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
     <input type="radio" name="slider" title="slide2" class="slider__nav"/>
@@ -24,28 +25,38 @@ export const Eight = () => {
   <div class="slider__inner">
     <div class="slider__contents">
       <quote>&rdquo;</quote>
-      <p class="slider__txt">Follow me on GitHub and Instagram for more work... - chaniru.lk  - the change</p>
-      <h2 class="slider__caption">@chaniru.lk</h2>
+      <p class="slider__txt">Built a production ML platform processing 961,531 
+    records with 7 algorithms — achieving 99.21% 
+    accuracy with Random Forest at KONE Elevator India.</p>
+      <h2 class="slider__caption">KONE — ML Platform</h2>
     </div>
     <div class="slider__contents">
       <quote>&rdquo;</quote>
-      <p class="slider__txt">You all bend over backwards to get it done. Inside sales and the Account Managers are great! It's your service...you all know that it's not just about taking orders it's about service. Why do we choose you guys - your people, your prices, you're quick and you have a ton of technical knowledge.</p>
-      <h2 class="slider__caption">Jared | Rexam</h2>
+      <p class="slider__txt">Founded LOGEAUM — an AI mental health platform 
+    achieving 94.44% emotion recognition accuracy 
+    across 18 test scenarios using GPT-4 and custom NLP.</p>
+      <h2 class="slider__caption">LOGEAUM — AI Startup</h2>
     </div>
     <div class="slider__contents">
       <quote>&rdquo;</quote>
-      <p class="slider__txt">Follow me on GitHub and Instagram for more work... - chaniru.lk  - the change</p>
-      <h2 class="slider__caption">@chaniru.lk</h2>
+      <p class="slider__txt">Engineered an agentic AI chatbot integrated with 
+    ServiceNow ITSM — fully on-premise, zero external 
+    API dependency, built with LangChain and Ollama.</p>
+      <h2 class="slider__caption">KONE — Agentic AI Chatbot</h2>
     </div>
     <div class="slider__contents">
       <quote>&rdquo;</quote>
-      <p class="slider__txt">You answer my questions, always takes care of problems, and I never have a hassle.</p>
-      <h2 class="slider__caption">Rex | LNP Engineering Plastics</h2>
+      <p class="slider__txt">Processed 657,595+ text samples across 12+ sources 
+    — building a high quality NLP corpus detecting 
+    15+ mental health condition categories.</p>
+      <h2 class="slider__caption">LOGEAUM — NLP Pipeline</h2>
     </div>
     <div class="slider__contents">
       <quote>&rdquo;</quote>
-      <p class="slider__txt">Follow me on GitHub and Instagram for more work... - chaniru.lk  - the change</p>
-      <h2 class="slider__caption">@chaniru.lk</h2>
+      <p class="slider__txt">Open to Data Scientist, Data Analyst and Data 
+    Engineer roles globally — available for 
+    immediate joining worldwide.</p>
+      <h2 class="slider__caption">Dwarakanath K Dinesh</h2>
     </div>
   </div>
 </div>

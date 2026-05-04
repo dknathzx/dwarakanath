@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61df;
 }
 
 @keyframes App-logo-spin {
@@ -59,8 +59,11 @@ src: url(./components/fonts/SatisficeDemo-w1EGw.woff2);
   background: black;
 }
 ::-webkit-scrollbar-thumb {
-  background: #c5bdb4;
+  background: #ff7300;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #bb6a4c;
+  background: #050201;
 }
+* {
+    cursor: grab;
+} 

@@ -31,10 +31,10 @@ export const Nine = () => {
         </div>
         <div className="cap-work">all work!</div>
         <div className="credit">
-            Follow me Instagram <br />
-            @chaniru.lk
+            Follow me on Linkedin <br />
+           
         </div>
-        <a href="https://www.instagram.com/chaniru.lk/" className="here">Click Here</a>
+        <a href="www.linkedin.com/in/dwarakanathk" className="here">Click Here</a>
   </div>
   );
 };

@@ -35,8 +35,8 @@
 }
 .blocker{
     position: absolute;
-    height: 640px;
-    width: 580px;
+    height: 700px;
+    width: 700px;
     margin-top: -20%;
     right: 1%;
 }
@@ -47,7 +47,7 @@
 }
 .throp{
     position: absolute;
-    height: 280px;
+    height: 200px;
     width: 300px;
     left: 2%;
     margin-top: 30%;
