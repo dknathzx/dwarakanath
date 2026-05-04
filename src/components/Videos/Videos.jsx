@@ -5,14 +5,14 @@ import { Mousewheel } from "swiper/modules";
 import "./Videos.css";
 
 const videos = [
-  { id: 1, title: "Tokenizer", date: "LLM from Scratch", src: "/videos/TokenizerScene.mp4" },
-  { id: 2, title: "Block Size", date: "LLM from Scratch", src: "/videos/BlockSizeScene.mp4" },
-  { id: 3, title: "Embedding", date: "LLM from Scratch", src: "/videos/EmbeddingScene.mp4" },
-  { id: 4, title: "Attention", date: "LLM from Scratch", src: "/videos/AttentionScene.mp4" },
-  { id: 5, title: "Feedforward", date: "LLM from Scratch", src: "/videos/FeedForwardScene.mp4" },
-  { id: 6, title: "Backpropagation", date: "LLM from Scratch", src: "/videos/BackpropScene.mp4" },
-  { id: 7, title: "Output Loss", date: "LLM from Scratch", src: "/videos/OutputLossScene.mp4" },
-  { id: 8, title: "Summary", date: "LLM from Scratch", src: "/videos/SummaryScene.mp4" },
+  { id: 1, title: "Tokenizer", date: "LLM from Scratch", src: "/dwarakanath/videos/TokenizerScene.mp4" },
+  { id: 2, title: "Block Size", date: "LLM from Scratch", src: "/dwarakanath/videos/BlockSizeScene.mp4" },
+  { id: 3, title: "Embedding", date: "LLM from Scratch", src: "/dwarakanath/videos/EmbeddingScene.mp4" },
+  { id: 4, title: "Attention", date: "LLM from Scratch", src: "/dwarakanath/videos/AttentionScene.mp4" },
+  { id: 5, title: "Feedforward", date: "LLM from Scratch", src: "/dwarakanath/videos/FeedForwardScene.mp4" },
+  { id: 6, title: "Backpropagation", date: "LLM from Scratch", src: "/dwarakanath/videos/BackpropScene.mp4" },
+  { id: 7, title: "Output Loss", date: "LLM from Scratch", src: "/dwarakanath/videos/OutputLossScene.mp4" },
+  { id: 8, title: "Summary", date: "LLM from Scratch", src: "/dwarakanath/videos/SummaryScene.mp4" },
 ];
 
 const Videos = ({ open, onClose }) => {
