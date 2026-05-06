@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dwarakanath/static/css/main.4bf6ff45.css",
-    "main.js": "/dwarakanath/static/js/main.74a3d622.js",
+    "main.js": "/dwarakanath/static/js/main.d78775b7.js",
     "static/js/787.28cb0dcd.chunk.js": "/dwarakanath/static/js/787.28cb0dcd.chunk.js",
     "static/media/img11.png": "/dwarakanath/static/media/img11.e633c3733bfca0510f9f.png",
     "static/media/vector3.png": "/dwarakanath/static/media/vector3.afd714b428631ca2f9b9.png",
@@ -19,11 +19,11 @@
     "static/media/SatisficeDemo-w1EGw.woff2": "/dwarakanath/static/media/SatisficeDemo-w1EGw.bdad2dc859e56255ac31.woff2",
     "index.html": "/dwarakanath/index.html",
     "main.4bf6ff45.css.map": "/dwarakanath/static/css/main.4bf6ff45.css.map",
-    "main.74a3d622.js.map": "/dwarakanath/static/js/main.74a3d622.js.map",
+    "main.d78775b7.js.map": "/dwarakanath/static/js/main.d78775b7.js.map",
     "787.28cb0dcd.chunk.js.map": "/dwarakanath/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4bf6ff45.css",
-    "static/js/main.74a3d622.js"
+    "static/js/main.d78775b7.js"
   ]
 }
