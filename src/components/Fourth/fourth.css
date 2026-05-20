@@ -1,210 +1,509 @@
-.fourth{
-    height: 100vh; 
+/* ================================================================
+   fourth.css — REBUILT WITH FLEXBOX (MOBILE-FIRST)
+   Replace your existing fourth.css with this file
+   ================================================================ */
+
+/* ===== BASE MOBILE STYLES (DEFAULT) ===== */
+.fourth {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 0;
 }
-.four-bloc{
-    position: absolute;
-    background-color: #1c1b19;
+
+/* SECTION 1: BLACK BLOCK WITH "MACHINE LEARNING" */
+.four-bloc {
+  background-color: #1c1b19;
+  width: 90%;
+  padding: 30px 20px;
+  margin: 20px auto;
+  border-radius: 4px;
+}
+
+.web {
+  color: #c5bdb4;
+  text-transform: uppercase;
+  font-family: scari;
+  font-size: 2.5em;
+  font-stretch: extra-expanded;
+  transform: scale(1, 1.3);
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+.stamp {
+  display: none; /* Hidden on mobile */
+}
+
+/* DECORATIVE LINES - HIDDEN ON MOBILE */
+.four-line,
+.four-line-two,
+.four-lin,
+.four-lin-del {
+  display: none;
+}
+
+/* SECTION 2: LATEST PROJECTS */
+.latest {
+  font-size: 2em;
+  font-family: 'Kings', cursive;
+  color: #1c1b19;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  margin: 30px 5% 10px 5%;
+}
+
+.des-lat {
+  font-family: gramlight;
+  font-size: 1.5em;
+  color: #1c1b19;
+  margin: 10px 5%;
+  line-height: 1.4;
+}
+
+.tip {
+  color: #1c1b19;
+  letter-spacing: -1px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin: 20px 5% 5px 5%;
+  font-family: 'Jersey 15 Charted', sans-serif;
+}
+
+.tp-des {
+  font-family: 'Jersey 15 Charted', sans-serif;
+  color: #1c1b19;
+  font-size: 1.2em;
+  margin: 5px 5%;
+}
+
+/* SECTION 3: YELLOW BLOCK WITH IMAGE */
+.yell-blocl {
+  width: 90%;
+  height: 180px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.yell-fill {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.think {
+  color: #1c1b19;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: scari;
+  letter-spacing: -2px;
+  margin: 15px 5%;
+}
+
+.new-org {
+  display: inline-block;
+  height: 30px;
+  width: 50px;
+  background-color: #df7853;
+  border-radius: 8px;
+  margin: 10px 5%;
+  position: relative;
+}
+
+.new {
+  color: #c5bdb4;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-family: scari;
+  letter-spacing: -2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.new-des-think {
+  font-size: 1.1em;
+  color: #1c1b19;
+  font-family: gramlight;
+  margin: 15px 5%;
+  line-height: 1.5;
+}
+
+/* SECTION 4: BUILD, TRAIN, DEPLOY */
+.text-head-one {
+  color: #1c1b19;
+  letter-spacing: -3px;
+  font-family: scari;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin: 30px 5% 10px 5%;
+}
+
+.delivery {
+  color: #1c1b19;
+  font-family: scari;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  transform: scale(1, 1.3);
+  margin: 10px 5%;
+}
+
+.block-a-four {
+  height: 70px;
+  width: 50px;
+  background-color: #1c1b19;
+  margin: 20px 5%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block-a-let-four {
+  text-transform: uppercase;
+  color: #c5bdb4;
+  font-size: 4em;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+.go-des {
+  font-size: 1.3em;
+  color: #1c1b19;
+  font-family: gramlight;
+  margin: 15px 5%;
+  line-height: 1.5;
+}
+
+.go-des-two {
+  font-size: 1.3em;
+  color: #1c1b19;
+  font-family: gramlight;
+  margin: 10px 5% 40px 5%;
+  line-height: 1.5;
+}
+
+/* ===== TABLET (768px+) ===== */
+@media (min-width: 768px) {
+  .fourth {
+    padding: 40px 0;
+  }
+  
+  .four-bloc {
+    width: 85%;
+    padding: 40px 30px;
+  }
+  
+  .web {
+    font-size: 4em;
+  }
+  
+  .latest {
+    font-size: 2.5em;
+    margin: 40px 4% 15px 4%;
+  }
+  
+  .des-lat {
+    font-size: 2em;
+    margin: 15px 4%;
+  }
+  
+  .tip {
+    font-size: 1.5em;
+    margin: 30px 4% 8px 4%;
+  }
+  
+  .tp-des {
+    font-size: 1.5em;
+    margin: 8px 4%;
+  }
+  
+  .yell-blocl {
+    width: 85%;
+    height: 220px;
+    margin: 40px auto;
+  }
+  
+  .think {
+    font-size: 2.5em;
+    margin: 20px 4%;
+  }
+  
+  .new-org {
+    height: 35px;
+    width: 55px;
+    margin: 12px 4%;
+  }
+  
+  .new {
+    font-size: 1.5em;
+  }
+  
+  .new-des-think {
+    font-size: 1.4em;
+    margin: 20px 4%;
+  }
+  
+  .text-head-one {
+    font-size: 3.5em;
+    margin: 40px 4% 15px 4%;
+  }
+  
+  .delivery {
+    font-size: 4.5em;
+    margin: 15px 4%;
+  }
+  
+  .block-a-four {
+    height: 80px;
+    width: 55px;
+    margin: 25px 4%;
+  }
+  
+  .block-a-let-four {
+    font-size: 5em;
+  }
+  
+  .go-des {
+    font-size: 1.6em;
+    margin: 20px 4%;
+  }
+  
+  .go-des-two {
+    font-size: 1.6em;
+    margin: 15px 4% 50px 4%;
+  }
+}
+
+/* ===== DESKTOP SMALL (1024px+) ===== */
+@media (min-width: 1024px) {
+  .fourth {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 5% 2%;
+    align-items: start;
+  }
+  
+  /* LEFT COLUMN */
+  .four-bloc {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
     height: 320px;
-    width: 960px;
-    left: 2%;
-    margin-top: 5%;
-}
-.web{
-    position: absolute;
-    color: #c5bdb4;
-    text-transform: uppercase;
-    font-family: scari;
-    font-size: 8em;
-    margin-top: 11%;
-    left: 5%;
-    font-stretch: extra-expanded;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .web {
+    font-size: 5em;
     transform: scale(1, 1.5);
-    -webkit-transform: scale(1, 1.5); /* Safari and Chrome */
-    -moz-transform: scale(1, 1.5); /* Firefox */
-    -ms-transform: scale(1, 1.5); /* IE 9+ */
-    -o-transform: scale(1, 1.5); /* Opera */
-}
-.stamp{
+  }
+  
+  .stamp {
+    display: block;
+    position: absolute;
     height: auto;
     width: 0px;
-    position: absolute;
-    margin-top: 0%;
+    top: 0;
     right: 2%;
-}
-.four-line{
-    margin-top: 40%;
-    left:21%;
-    width: 23%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
-    position: absolute;
-    transform: rotate(90deg);
-}
-.latest{
-    position: absolute;
-    font-size: 3em;
-    font-family: 'Kings', cursive;
-    color: #1c1b19;
-    margin-top: 30%;
-    left: 2%;
-    text-transform: uppercase;
-    letter-spacing: -5px;
-}
-.des-lat{
-    position: absolute;
-    font-family: gramlight;
-    font-size: 3em;
-    color: #1c1b19;
-    margin-top: 35%;
-    left: 2%;
-}
-.tip{
-    position: absolute;
-    color: #1c1b19;
-    letter-spacing: -2px;
+  }
+  
+  .latest {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 2.5em;
+    margin: 0 0 15px 0;
+  }
+  
+  .des-lat {
+    grid-column: 1;
+    grid-row: 3;
     font-size: 2em;
-    text-transform: uppercase;
-    margin-top: 50.3%;
-    font-family: 'Jersey 15 Charted', sans-serif;
-    left: 2%;
-}
-.tp-des{
-    position: absolute;
-    font-family:  'Jersey 15 Charted', sans-serif;
-    color: #1c1b19;
-    font-size: 2em;
-    margin-top: 50.3%;
-    left: 6.5%;
-}
-.four-line-two{
-    margin-top: 61%;
-    left: 36%;
-    width: 65%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
-    position: absolute;
-    transform: rotate(90deg);
-}
-.yell-blocl{
-    position: absolute;
-    height: 155px;
-    width: 400px;
-    margin-top:30%;
-    left: 35%;
-}
-.yell-fill{
-    position: absolute;
-    object-fit: contain;
-    height: 100%;
+    margin: 0;
+  }
+  
+  .tip {
+    grid-column: 1;
+    grid-row: 4;
+    font-size: 1.5em;
+    margin: 20px 0 0 0;
+  }
+  
+  .tp-des {
+    grid-column: 1;
+    grid-row: 5;
+    font-size: 1.5em;
+    margin: 5px 0;
+  }
+  
+  /* MIDDLE COLUMN */
+  .yell-blocl {
+    grid-column: 2;
+    grid-row: 1;
     width: 100%;
-}
-.think{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 3em;
-    margin-top: 43%;
-    left: 35%;
-    text-transform: uppercase;
-    font-family: scari;
-    letter-spacing: -3px;
-}
-.new-org{
-    position: absolute;
-    height: 38px;
-    width: 60px;
-    background-color: #df7853;
-    margin-top: 43%;
-    left: 47%;
-    border-radius: 10px;
-}
-.new{
-    position: absolute;
-    color: #c5bdb4;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-family: scari;
-    letter-spacing: -3px;
-    margin-top: 43.5%;
-    left: 47.6%;
-}
-.new-des-think{
-    position: absolute;
-    font-size: 1.3em;
-    color: #1c1b19;
-    font-family: gramlight;
-    margin-top: 46.3%;
-    left: 35.5%;
-}
-.four-lin{
-    margin-top: 32%;
-    right:2.5%;
-    width: 20%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
-    position: absolute;
-}
-.text-head-one{
-    position: absolute;
-    color: #1c1b19;
-    letter-spacing: -5px;
-    font-family: scari;
-    font-size: 5.3em;
-    margin-top: 30%;
-    right: 2%;
-    text-transform: uppercase;
-}
-.four-lin-del{
-    margin-top: 46%;
-    right: 2.5%;
-    width: 20%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
-    position: absolute;
-}
-.delivery{
-    color: #1c1b19;
-    position: absolute;
-    font-family: scari;
-    font-size: 8.5em;
-    margin-top: 40%;
-    right: 1%;
-    text-transform: uppercase;
+    height: 180px;
+    margin: 0;
+  }
+  
+  .think {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 2.5em;
+    margin: 15px 0 0 0;
+  }
+  
+  .new-org {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 15px 0 0 0;
+    align-self: start;
+    position: relative;
+    left: 250px;
+  }
+  
+  .new-des-think {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  /* RIGHT COLUMN */
+  .text-head-one {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 4em;
+    letter-spacing: -4px;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .delivery {
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 6em;
+    margin: 10px 0;
+    text-align: right;
     transform: scale(1, 1.5);
-    -webkit-transform: scale(1, 1.5); /* Safari and Chrome */
-    -moz-transform: scale(1, 1.5); /* Firefox */
-    -ms-transform: scale(1, 1.5); /* IE 9+ */
-    -o-transform: scale(1, 1.5); /* Opera */
-}
-.block-a-four{
-    position: absolute;
+  }
+  
+  .block-a-four {
+    grid-column: 3;
+    grid-row: 3;
     height: 98px;
     width: 62px;
-    background-color: #1c1b19;
-    right: 26%;
-    margin-top: 53%;
-}
-.block-a-let-four{
-    position: relative;
-    text-transform: uppercase;
-    color: #c5bdb4;
+    margin: 20px 0;
+    justify-self: end;
+  }
+  
+  .block-a-let-four {
     font-size: 6em;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 1%;
-    left: 5%;
-}
-.go-des{
+  }
+  
+  .go-des {
+    grid-column: 3;
+    grid-row: 4;
+    font-size: 1.6em;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .go-des-two {
+    grid-column: 3;
+    grid-row: 5;
+    font-size: 1.6em;
+    margin: 5px 0;
+    text-align: right;
+  }
+  
+  /* Show decorative lines on desktop */
+  .four-line,
+  .four-line-two,
+  .four-lin,
+  .four-lin-del {
+    display: block;
+    border-bottom: 1px solid #1c1b19;
     position: absolute;
-    font-size: 2em;
-    color: #1c1b19;
-    font-family: gramlight;
-    margin-top: 52.5%;
-    right: 1%;
+  }
+  
+  .four-line {
+    width: 23%;
+    height: 47px;
+    left: 21%;
+    top: 40%;
+    transform: rotate(90deg);
+  }
+  
+  .four-line-two {
+    width: 65%;
+    height: 47px;
+    left: 36%;
+    top: 61%;
+    transform: rotate(90deg);
+  }
+  
+  .four-lin {
+    width: 20%;
+    height: 47px;
+    right: 2.5%;
+    top: 32%;
+  }
+  
+  .four-lin-del {
+    width: 20%;
+    height: 47px;
+    right: 2.5%;
+    top: 46%;
+  }
 }
-.go-des-two{
-    position: absolute;
+
+/* ===== DESKTOP LARGE (1400px+) ===== */
+@media (min-width: 1400px) {
+  .four-bloc {
+    width: 100%;
+    height: 320px;
+  }
+  
+  .web {
+    font-size: 6em;
+  }
+  
+  .latest {
+    font-size: 3em;
+  }
+  
+  .des-lat {
+    font-size: 2.5em;
+  }
+  
+  .yell-blocl {
+    height: 200px;
+  }
+  
+  .think {
+    font-size: 3em;
+  }
+  
+  .text-head-one {
+    font-size: 5.3em;
+  }
+  
+  .delivery {
+    font-size: 8em;
+  }
+  
+  .go-des,
+  .go-des-two {
     font-size: 2em;
-    color: #1c1b19;
-    font-family: gramlight;
-    margin-top: 59.7%;
-    right: 0%;
+  }
 }

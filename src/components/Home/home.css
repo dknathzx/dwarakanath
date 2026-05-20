@@ -1,217 +1,185 @@
-.home{
-    height: 100vh;
+/* ================================================================
+   home.css — REBUILT WITH FLEXBOX (MOBILE-FIRST)
+   Replace your existing home.css with this file
+   ================================================================ */
+
+/* ===== BASE MOBILE STYLES (DEFAULT) ===== */
+
+body, html {
+  background: #0a0a0a;
+  margin: 0;
+  padding: 0;
 }
-.logo{
-    position: absolute;
-    height: auto;
-    width: 120px;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0;
+  background: transparent;
 }
+
+/* NAVIGATION */
+.logo {
+  height: auto;
+  width: 80px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
 .hamburger {
   display: flex;
-  align-self: center;
   flex-direction: column;
   justify-content: space-between;
-  width: 50px;
+  width: 40px;
   height: 10px;
   cursor: pointer;
-  right: 1%;
-  top: 5%;
-  transform: translate(-50%, -50%);
   position: absolute;
-  z-index: 2;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
 }
+
 .hamburger div {
   align-self: flex-end;
-  height: 3px;
+  height: 2px;
   width: 100%;
   background: #1c1b19;
 }
+
 .hamburger .meat {
   width: 100%;
   transition: all 200ms ease-in-out;
 }
+
 .hamburger:hover div {
   width: 100%;
 }
+
 .hamburger:hover .top-bun {
   animation: burger-hover 1s infinite ease-in-out alternate;
 }
+
 .hamburger:hover .meat {
   animation: burger-hover 1s infinite ease-in-out alternate forwards 200ms;
 }
+
 @keyframes burger-hover {
   0% { width: 100%; }
   50% { width: 50%; }
   100% { width: 100%; }
 }
-.location{
-    position: absolute;
-    font-size: 1.5em;
-    font-family: gramlight;
-    color: #1c1b19;
-    left: 9%;
-    top: 5%;
-    transform: translate(-50%, -50%);
-}
-.line{
-    top: 2%;
-    width: 100%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
-    position: absolute;
+
+.location {
+  font-size: 0.9em;
+  font-family: gramlight;
+  color: #1c1b19;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 10;
 }
 
-/* PIC BLOCKS */
-.pic-block{
-    position: absolute;
-    top: 10%;
-    left: 1.5%;
-    height: 200px;
-    width: 400px;
-    overflow: hidden;
-    transition: transform 0.4s ease;
-}
-.pic-block:hover {
-    transform: scale(1.03);
-}
-.pic-block:hover .image-og {
-    box-shadow: inset 0 -80px 60px -20px rgba(28,27,25,0.9);
-    filter: contrast(1.1) brightness(0.9);
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #1c1b19;
+  position: absolute;
+  top: 60px;
+  z-index: 5;
 }
 
-.pic-block-two{
-    position: absolute;
-    top: 10%;
-    left: 35%;
-    height: 200px;
-    width: 400px;
-    overflow: hidden;
-    transition: transform 0.4s ease;
-}
-.pic-block-two:hover {
-    transform: scale(1.03);
-}
-.pic-block-two:hover .image-og {
-    box-shadow: inset 0 -80px 60px -20px rgba(28,27,25,0.9);
-    filter: contrast(1.1) brightness(0.9);
+/* MAIN CONTENT - MOBILE FIRST */
+.pic-block,
+.pic-block-two,
+.pic-block-three {
+  width: 90%;
+  height: 180px;
+  margin: 20px auto;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+  border-radius: 4px;
 }
 
-.pic-block-three{
-    position: absolute;
-    top: 10%;
-    right: 1.5%;
-    height: 200px;
-    width: 400px;
-    overflow: hidden;
-    transition: transform 0.4s ease;
-}
+.pic-block { margin-top: 100px; }
+
+.pic-block:hover,
+.pic-block-two:hover,
 .pic-block-three:hover {
-    transform: scale(1.03);
+  transform: scale(1.02);
 }
+
+.pic-block:hover .image-og,
+.pic-block-two:hover .image-og,
 .pic-block-three:hover .image-og {
-    box-shadow: inset 0 -80px 60px -20px rgba(28,27,25,0.9);
-    filter: contrast(1.1) brightness(0.9);
+  box-shadow: inset 0 -60px 40px -15px rgba(28,27,25,0.8);
+  filter: contrast(1.1) brightness(0.9);
 }
 
-.image-og{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    transition: all 0.4s ease;
+.image-og {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease;
 }
 
-/* TAGGERS */
-.tagger-one{
-    position: absolute;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #1c1b19;
-    font-family: gramnarrow;
-    top: 34%;
-    left: 1.5%;
-}
-.tagger-des{
-  position: absolute;
-  color: #1c1b19;
-  font-family: gramlight;
-  top: 40%;
-  left: 1.5%;
-  font-size: 1.3em;
-}
-.tagger-two{
-  position: absolute;
-  font-size: 2em;
+.tagger-one,
+.tagger-two,
+.tagger-three {
+  font-size: 1.4em;
   text-transform: uppercase;
   font-weight: 600;
   color: #1c1b19;
   font-family: gramnarrow;
-  top: 34%;
-  left: 35%;
-}
-.tagger-des-two{
-  position: absolute;
-  color: #1c1b19;
-  font-family: gramlight;
-  top: 40%;
-  left: 35%;
-  font-size: 1.3em;
-}
-.tagger-three{
-  position: absolute;
-  font-size: 2em;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #1c1b19;
-  font-family: gramnarrow;
-  top: 34%;
-  left: 72%;
-}
-.tagger-des-three{
-  position: absolute;
-  color: #1c1b19;
-  font-family: gramlight;
-  top: 40%;
-  left: 72%;
-  font-size: 1.3em;
+  margin: 12px 5%;
 }
 
-/* NAME BLOCK */
-.name{
-  position: absolute;
+.tagger-des,
+.tagger-des-two,
+.tagger-des-three {
+  color: #1c1b19;
+  font-family: gramlight;
+  font-size: 1em;
+  margin: 8px 5% 24px 5%;
+  line-height: 1.5;
+}
+
+.new {
+  font-size: 1em;
+  color: #c5bdb4;
+  text-transform: uppercase;
+  font-family: scari;
+  letter-spacing: -1px;
+  text-align: center;
+  margin: 10px auto;
+  display: inline-block;
+  background: #df7853;
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+.name-block {
+  background-color: #1c1b19;
+  width: 100%;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.name {
   color: #c5bdb4;
   font-family: scari;
-  font-size: 16em;
+  font-size: 3em;
   text-align: center;
   text-transform: uppercase;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.name-block{
-  background-color: #1c1b19;
-  position: absolute;
-  height: 270px;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 97%;
-}
-.new{
-    position: absolute;
-    color: #c5bdb4;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-family: scari;
-    letter-spacing: -3px;
-    margin-top: 43.5%;
-    left: 47.6%;
+  margin: 0;
+  padding: 0;
 }
 
-/* MENU OVERLAY */
+/* OVERLAYS */
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -220,158 +188,180 @@
   height: 100vh;
   background: #1c1b19;
   z-index: 9999;
-  transform-origin: left;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow-y: auto;
+  padding: 20px;
 }
+
 .menu-close {
   position: absolute;
-  top: 5%;
-  right: 3%;
-  font-size: 2em;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8em;
   color: #c5bdb4;
   cursor: pointer;
   font-family: gramlight;
 }
+
 .menu-links {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   text-align: center;
 }
+
 .menu-links a {
   font-family: scari;
-  font-size: 6em;
+  font-size: 2.5em;
   color: #c5bdb4;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   transition: color 0.3s ease;
 }
+
 .menu-links a:hover {
   color: #df7853;
 }
+
 .menu-bottom {
   position: absolute;
-  bottom: 5%;
+  bottom: 20px;
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  gap: 15px;
   align-items: center;
+  text-align: center;
 }
+
 .menu-bottom a {
   font-family: gramlight;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #c5bdb4;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: color 0.3s ease;
 }
+
 .menu-bottom a:hover {
   color: #df7853;
 }
+
 .menu-bottom span {
   font-family: gramlight;
-  font-size: 1em;
+  font-size: 0.85em;
   color: #c5bdb4;
   opacity: 0.6;
 }
 
-/* PROJECTS OVERLAY */
 .projects-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #f5f3ef;
+  background: #ffffff;
   z-index: 9999;
-  transform-origin: left;
   overflow-y: auto;
-  padding: 40px;
+  padding: 20px;
   box-sizing: border-box;
 }
+
 .projects-close {
   position: fixed;
-  top: 5%;
-  right: 3%;
+  top: 20px;
+  right: 20px;
   font-size: 1.5em;
   color: #1c1b19;
   cursor: pointer;
   font-family: gramlight;
   z-index: 99999;
 }
+
 .projects-title {
   font-family: scari;
-  font-size: 6em;
+  font-size: 3em;
   color: #1c1b19;
   text-transform: uppercase;
-  letter-spacing: -4px;
-  margin-bottom: 40px;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
   margin-top: 60px;
 }
+
 .projects-list {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 0;
 }
+
 .project-item {
   display: flex;
   align-items: flex-start;
-  gap: 30px;
-  padding: 30px 0;
+  gap: 15px;
+  padding: 20px 0;
   border-bottom: 1px solid #1c1b19;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .project-item:hover {
-  padding-left: 20px;
+  padding-left: 10px;
 }
+
 .project-number {
   font-family: scari;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #1c1b19;
   opacity: 0.3;
-  min-width: 60px;
+  min-width: 40px;
 }
+
 .project-info {
   flex: 1;
 }
+
 .project-top {
   display: flex;
   align-items: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-bottom: 8px;
 }
+
 .project-name {
   font-family: scari;
-  font-size: 2.5em;
+  font-size: 1.6em;
   color: #1c1b19;
   text-transform: uppercase;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   margin: 0;
 }
+
 .project-tag {
   font-family: gramlight;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #df7853;
   border: 1px solid #df7853;
-  padding: 4px 12px;
+  padding: 3px 10px;
   border-radius: 20px;
 }
+
 .project-desc {
   font-family: gramlight;
-  font-size: 1em;
+  font-size: 0.95em;
   color: #1c1b19;
   opacity: 0.7;
   margin: 6px 0;
   line-height: 1.6;
 }
+
 .project-stack {
   font-family: gramnarrow;
-  font-size: 0.85em;
+  font-size: 0.8em;
   color: #1c1b19;
   opacity: 0.5;
   margin: 0;
@@ -381,19 +371,267 @@
 
 .watch-videos-btn {
   display: inline-block;
-  margin: 20px 0 0 60px;
-  padding: 12px 28px;
+  margin: 15px 0;
+  padding: 10px 24px;
   border: 1px solid #bb6a4c;
   color: #bb6a4c;
   background: none;
   font-family: gramnarrow;
-  font-size: 1em;
-  letter-spacing: 3px;
+  font-size: 0.9em;
+  letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .watch-videos-btn:hover {
   background: #bb6a4c;
   color: #fff;
+}
+
+/* ===== TABLET (768px+) ===== */
+@media (min-width: 768px) {
+  .logo {
+    width: 100px;
+    top: 30px;
+  }
+  
+  .location {
+    font-size: 1.2em;
+    left: 40px;
+    top: 30px;
+  }
+  
+  .hamburger {
+    right: 40px;
+    top: 30px;
+    width: 45px;
+  }
+  
+  .line {
+    top: 80px;
+  }
+  
+  .pic-block { margin-top: 120px; }
+  
+  .pic-block,
+  .pic-block-two,
+  .pic-block-three {
+    width: 85%;
+    height: 220px;
+  }
+  
+  .tagger-one,
+  .tagger-two,
+  .tagger-three {
+    font-size: 1.8em;
+  }
+  
+  .tagger-des,
+  .tagger-des-two,
+  .tagger-des-three {
+    font-size: 1.2em;
+  }
+  
+  .name {
+    font-size: 5em;
+  }
+  
+  .menu-links a {
+    font-size: 4em;
+  }
+  
+  .menu-bottom {
+    flex-direction: row;
+    gap: 30px;
+  }
+  
+  .projects-title {
+    font-size: 4.5em;
+    margin-bottom: 30px;
+  }
+  
+  .project-name {
+    font-size: 2em;
+  }
+}
+
+/* ===== DESKTOP SMALL (1024px+) ===== */
+@media (min-width: 1024px) {
+  .home {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .logo {
+    width: 120px;
+    top: 5%;
+  }
+  
+  .location {
+    font-size: 1.5em;
+    left: 9%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hamburger {
+    right: 1%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+  }
+  
+  .line {
+    top: 2%;
+    height: 47px;
+  }
+  
+  /* THREE COLUMN LAYOUT FOR DESKTOP */
+  .pic-block {
+    position: absolute;
+    top: 10%;
+    left: 1.5%;
+    height: 200px;
+    width: 400px;
+    margin: 0;
+  }
+  
+  .pic-block-two {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    height: 200px;
+    width: 400px;
+    margin: 0;
+  }
+  
+  .pic-block-three {
+    position: absolute;
+    top: 10%;
+    right: 1.5%;
+    height: 200px;
+    width: 400px;
+    margin: 0;
+  }
+  
+  .tagger-one {
+    position: absolute;
+    font-size: 2em;
+    top: 34%;
+    left: 1.5%;
+    margin: 0;
+  }
+  
+  .tagger-des {
+    position: absolute;
+    top: 40%;
+    left: 1.5%;
+    font-size: 1.3em;
+    margin: 0;
+  }
+  
+  .tagger-two {
+    position: absolute;
+    font-size: 2em;
+    top: 34%;
+    left: 35%;
+    margin: 0;
+  }
+  
+  .tagger-des-two {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    font-size: 1.3em;
+    margin: 0;
+  }
+  
+  .tagger-three {
+    position: absolute;
+    font-size: 2em;
+    top: 34%;
+    left: 72%;
+    margin: 0;
+  }
+  
+  .tagger-des-three {
+    position: absolute;
+    top: 40%;
+    left: 72%;
+    font-size: 1.3em;
+    margin: 0;
+  }
+  
+  .new {
+    position: absolute;
+    margin-top: 43.5%;
+    left: 47.6%;
+    font-size: 2em;
+  }
+  
+  .name-block {
+    background-color: #1c1b19;
+    position: absolute;
+    height: 270px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 97%;
+    padding: 0;
+  }
+  
+  .name {
+    position: absolute;
+    font-size: 16em;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .menu-links a {
+    font-size: 6em;
+  }
+  
+  .projects-title {
+    font-size: 6em;
+    letter-spacing: -4px;
+    margin-bottom: 40px;
+  }
+  
+  .projects-overlay {
+    padding: 40px;
+  }
+  
+  .project-item {
+    gap: 30px;
+    padding: 30px 0;
+  }
+  
+  .project-item:hover {
+    padding-left: 20px;
+  }
+  
+  .project-number {
+    font-size: 2em;
+    min-width: 60px;
+  }
+  
+  .project-name {
+    font-size: 2.5em;
+  }
+  
+  .watch-videos-btn {
+    margin-left: 60px;
+  }
+}
+
+/* ===== DESKTOP LARGE (1400px+) ===== */
+@media (min-width: 1400px) {
+  .pic-block,
+  .pic-block-two,
+  .pic-block-three {
+    height: 220px;
+    width: 450px;
+  }
 }

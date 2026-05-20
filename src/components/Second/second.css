@@ -1,65 +1,192 @@
-.second{
+/* ================================================================
+   second.css — REBUILT WITH FLEXBOX (MOBILE-FIRST)
+   Replace your existing second.css with this file
+   ================================================================ */
+
+/* ===== BASE MOBILE STYLES (DEFAULT) ===== */
+.second {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 80px 0 40px 0;
+  background: #f9f7f4;
+}
+
+/* DECORATIVE LINES - HIDDEN ON MOBILE */
+.sec-line,
+.sec-line-two,
+.sec-line-three {
+  display: none;
+}
+
+/* TEXT CONTENT */
+.inter {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: #1c1b19;
+  letter-spacing: -3px;
+  margin: 0 5% 15px 5%;
+  line-height: 1;
+}
+
+.artist {
+  font-size: 2.8em;
+  color: #1c1b19;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+  transform: scale(1, 1.3);
+  margin: 0 5% 30px 5%;
+  line-height: 1;
+}
+
+/* IMAGE CONTAINER */
+.pic-bay {
+  width: 100%;
+  height: 350px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.face {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* ===== TABLET (768px+) ===== */
+@media (min-width: 768px) {
+  .second {
+    padding: 100px 0 60px 0;
+  }
+  
+  .inter {
+    font-size: 4.5em;
+    margin: 0 4% 20px 4%;
+  }
+  
+  .artist {
+    font-size: 4em;
+    margin: 0 4% 40px 4%;
+    transform: scale(1, 1.4);
+  }
+  
+  .pic-bay {
+    height: 450px;
+    margin: 30px 0;
+  }
+  
+  .face {
+    object-fit: contain;
+  }
+}
+
+/* ===== DESKTOP SMALL (1024px+) ===== */
+@media (min-width: 1024px) {
+  .second {
     height: 100vh;
-}
-.sec-line{
-    margin-top: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+  }
+  
+  /* LEFT SIDE - TEXT */
+  .inter {
+    position: absolute;
+    font-size: 5em;
+    letter-spacing: -4px;
+    margin: 0;
+    top: 15%;
+    left: 2.3%;
+  }
+  
+  .artist {
+    position: absolute;
+    font-size: 5em;
+    margin: 0;
+    top: 25%;
     left: 2%;
-    width: 30%;
-    height: 47px;
+    transform: scale(1, 1.5);
+  }
+  
+  /* RIGHT SIDE - IMAGE */
+  .pic-bay {
+    position: absolute;
+    right: 0.1%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70vh;
+    width: auto;
+    max-width: 55%;
+    margin: 0;
+  }
+  
+  .face {
+    object-fit: contain;
+  }
+  
+  /* SHOW DECORATIVE LINES ON DESKTOP */
+  .sec-line,
+  .sec-line-two,
+  .sec-line-three {
+    display: block;
     border-bottom: 1px solid #1c1b19;
     position: absolute;
-}
-.sec-line-two{
-    margin-top: 30%;
+    height: 47px;
+  }
+  
+  .sec-line {
+    top: 12%;
     left: 2%;
     width: 30%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
-    position: absolute;
-}
-.sec-line-three{
-    margin-top: 54%;
+  }
+  
+  .sec-line-two {
+    top: 30%;
+    left: 2%;
+    width: 30%;
+  }
+  
+  .sec-line-three {
+    top: 54%;
     left: 2%;
     width: 80%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
-    position: absolute;
     transform: rotate(90deg);
+  }
 }
-.inter{
-    margin-top: 15%;
-    left: 2.3%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 6.9em;
-    text-transform: uppercase;
-    position: absolute;
-    color: #1c1b19;
-    letter-spacing: -5px;
-}
-.artist{
-    position: absolute;
-    margin-top: 25%;
-    left: 2%;
+
+/* ===== DESKTOP MEDIUM (1200px+) ===== */
+@media (min-width: 1200px) {
+  .inter {
     font-size: 6em;
-    color: #1c1b19;
-    text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
-    transform: scale(1, 1.5);
-    -webkit-transform: scale(1, 1.5); /* Safari and Chrome */
-    -moz-transform: scale(1, 1.5); /* Firefox */
-    -ms-transform: scale(1, 1.5); /* IE 9+ */
-    -o-transform: scale(1, 1.5); /* Opera */
+  }
+  
+  .artist {
+    font-size: 5.5em;
+  }
+  
+  .pic-bay {
+    height: 75vh;
+    max-width: 60%;
+  }
 }
-.pic-bay{
-    position: absolute;
-    margin-top: 5%;
-    right:0.1%;
+
+/* ===== DESKTOP LARGE (1400px+) ===== */
+@media (min-width: 1400px) {
+  .inter {
+    font-size: 6.9em;
+  }
+  
+  .artist {
+    font-size: 6em;
+  }
+  
+  .pic-bay {
     height: 800px;
     width: 1000px;
-}
-.face{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+    max-width: none;
+  }
 }

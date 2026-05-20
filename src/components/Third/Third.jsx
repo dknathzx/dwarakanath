@@ -1,10 +1,10 @@
 import React from "react";
 import "./third.css";
-import side from "../assets/img1.jpg";
+import img99 from "../assets/img5.jpg";
 export const Third = () => {
   return (<div className="third">
     <div className="pic-side-boc">
-        <img src={side} alt="side" className="boc-fill" />
+        <img src={img99} alt="side" className="boc-fill" />
     </div>
     <div className="third-line"></div>
     <div className="third-line-two"></div>

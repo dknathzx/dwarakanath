@@ -29,13 +29,11 @@
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
+
+/* ── FONTS ─────────────────────────────────────── */
 @font-face {
   font-family: gramnarrow;
   src: url(./components/fonts/ITC\ Garamond\ Book\ Narrow.woff2);
@@ -45,25 +43,105 @@
   src: url(./components/fonts/ITC\ Garamond\ Light\ Condensed.woff2);
 }
 @font-face {
-font-family: scari;
-src: url(./components/fonts/SatisficeDemo-w1EGw.woff2);
+  font-family: scari;
+  src: url(./components/fonts/SatisficeDemo-w1EGw.woff2);
 }
 @font-face {
   font-family: albaz;
   src: url(./components/fonts/Abaddon.woff2);
 }
-::-webkit-scrollbar {
-  width: 3px;
+
+/* ── SCROLLBAR ──────────────────────────────────── */
+::-webkit-scrollbar       { width: 3px; }
+::-webkit-scrollbar-track { background: black; }
+::-webkit-scrollbar-thumb { background: #ff7300; }
+::-webkit-scrollbar-thumb:hover { background: #050201; }
+
+/* ── GLOBAL CURSOR ──────────────────────────────── */
+* { cursor: grab; }
+
+/* ── MOBILE BASE  ≤768px ────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Section wrappers — VISIBLE so images can show */
+  .home, .second, .third, .fourth, .five,
+  .six,  .seven,  .eight, .nine,  .last {
+    height: auto !important;
+    min-height: 100vh;
+    overflow: visible;   /* ← was "hidden" — that collapsed every image */
+    position: relative;
+  }
+
+  /* NAV */
+  .location  { left: 5%; font-size: 1em; }
+  .hamburger { right: 5%; }
+
+  /* HOME image blocks — stack vertically */
+  .pic-block, .pic-block-two, .pic-block-three {
+    position: relative !important;
+    width: 92% !important;
+    height: 210px !important;
+    left: auto !important; right: auto !important; top: auto !important;
+    margin: 10px auto !important;
+    display: block !important;
+    overflow: hidden;       /* clip inside the box is fine */
+  }
+
+  /* NAME BLOCK */
+  .name       { font-size: 3em !important; }
+  .name-block { height: auto; padding: 20px 0; }
+
+  /* TAGGERS */
+  .tagger-one, .tagger-two, .tagger-three,
+  .tagger-des, .tagger-des-two, .tagger-des-three {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    font-size: 1.1em !important;
+    display: block;
+    margin: 5px 4%;
+  }
+
+  /* MENU */
+  .menu-links a { font-size: 2.5em; }
+
+  /* SECOND — face photo */
+  .inter  { font-size: 3em !important; margin-top: 10% !important; }
+  .artist { font-size: 2.5em !important; margin-top: 10px !important; }  /* was 40% — pushed it off-screen */
+  .pic-bay {
+    position: relative !important;
+    width: 100% !important;
+    height: 300px !important;
+    right: auto !important;  /* was "0" — broken with position:relative */
+  }
+
+  /* SEVEN */
+  .the    { font-size: 8em !important; left: 5% !important; }
+  .pixel  { font-size: 8em !important; }
+  .perfect { font-size: 7em !important; left: 5% !important; }
+  .blocker {
+    position: relative !important;
+    width: 100% !important;
+    height: 300px !important;
+    right: auto !important;
+  }
+
+  /* NINE */
+  .nine-block, .nine-block-two {
+    position: relative !important;
+    width: 90% !important;
+    margin: 10px auto !important;
+    left: auto !important; right: auto !important;
+  }
+  .cap-work        { font-size: 2.5em !important; left: 5% !important; }
+  .credit, .here   { font-size: 1.5em !important; left: 5% !important; }
+
+  /* LAST */
+  .last-link-one, .last-link-two, .last-link-three {
+    position: relative !important;
+    font-size: 1.2em !important;
+    margin: 10px 5% !important;
+    right: auto !important;
+    display: block;
+  }
+  .last-blk { width: 90% !important; position: relative !important; }
 }
-::-webkit-scrollbar-track {
-  background: black;
-}
-::-webkit-scrollbar-thumb {
-  background: #ff7300;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #050201;
-}
-* {
-    cursor: grab;
-} 

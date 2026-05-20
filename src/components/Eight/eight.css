@@ -19,11 +19,10 @@
     left: 2%;
     font-stretch: extra-expanded;
     transform: scale(1, 1.5);
-    -webkit-transform: scale(1, 1.5); /* Safari and Chrome */
-    -moz-transform: scale(1, 1.5); /* Firefox */
-    -ms-transform: scale(1, 1.5); /* IE 9+ */
-    -o-transform: scale(1, 1.5); /* Opera */
-    
+    -webkit-transform: scale(1, 1.5);
+    -moz-transform: scale(1, 1.5);
+    -ms-transform: scale(1, 1.5);
+    -o-transform: scale(1, 1.5);
 }
 .art-des{
     position: absolute;
@@ -59,17 +58,17 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-   align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-   justify-content: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 .slider__nav {
   width: 12px;
@@ -91,21 +90,11 @@
   -webkit-animation: check 0.4s linear forwards;
   animation: check 0.4s linear forwards;
 }
-.slider__nav:checked:nth-of-type(1) ~ .slider__inner {
-  left: 0%;
-}
-.slider__nav:checked:nth-of-type(2) ~ .slider__inner {
-  left: -100%;
-}
-.slider__nav:checked:nth-of-type(3) ~ .slider__inner {
-  left: -200%;
-}
-.slider__nav:checked:nth-of-type(4) ~ .slider__inner {
-  left: -300%;
-}
-.slider__nav:checked:nth-of-type(5) ~ .slider__inner {
-  left: -400%;
-}
+.slider__nav:checked:nth-of-type(1) ~ .slider__inner { left: 0%; }
+.slider__nav:checked:nth-of-type(2) ~ .slider__inner { left: -100%; }
+.slider__nav:checked:nth-of-type(3) ~ .slider__inner { left: -200%; }
+.slider__nav:checked:nth-of-type(4) ~ .slider__inner { left: -300%; }
+.slider__nav:checked:nth-of-type(5) ~ .slider__inner { left: -400%; }
 .slider__inner {
   position: absolute;
   top: 80px;
@@ -166,7 +155,6 @@ quote {
     color: #1c1b19;
     margin-bottom: 0;
 }
-
 @-webkit-keyframes check {
   50% {
     outline-color: #1c1b19;
@@ -177,7 +165,6 @@ quote {
     box-shadow: 0 0 0 0 #1c1b19, 0 0 0 0 rgba(51, 51, 51, 0);
   }
 }
-
 @keyframes check {
   50% {
     outline-color: #1c1b19;
@@ -186,5 +173,73 @@ quote {
   100% {
     outline-color: #1c1b19;
     box-shadow: 0 0 0 0 #1c1b19, 0 0 0 0 rgba(51, 51, 51, 0);
+  }
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .eight {
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  .eight-bloc {
+    position: relative !important;
+    width: 92% !important;
+    height: auto !important;
+    left: auto !important;
+    margin: 60px auto 20px auto !important;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .art {
+    position: relative !important;
+    font-size: 4em !important;
+    margin-top: 0 !important;
+    left: auto !important;
+    transform: scale(1, 1.2) !important;
+    display: block;
+  }
+  .art-des {
+    position: relative !important;
+    font-size: 1.3em !important;
+    margin-top: 10px !important;
+    right: auto !important;
+    display: block;
+    padding: 0 4%;
+  }
+  .awwwards {
+    position: relative !important;
+    font-size: 2.5em !important;
+    margin-top: 10px !important;
+    right: auto !important;
+    display: block;
+    padding: 0 4%;
+  }
+  .com {
+    position: relative !important;
+    font-size: 1.3em !important;
+    margin-top: 10px !important;
+    right: auto !important;
+    display: block;
+    padding: 0 4%;
+  }
+  .testimonials-section {
+    top: 0 !important;
+    height: auto !important;
+    min-height: 300px;
+    margin-top: 20px;
+  }
+  .slider__txt {
+    font-size: 1.2em !important;
+    max-width: 90% !important;
+    padding: 0 10px;
+  }
+  .slider__caption {
+    font-size: 1em !important;
+  }
+  .slider__nav {
+    margin: 20px 8px !important;
   }
 }

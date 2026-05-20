@@ -162,3 +162,114 @@
 .here:hover::before {
   transform: scaleX(0);
 }
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nine {
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  .nine-line, .nine-line-two, .nine-line-three {
+    display: none;
+  }
+  .nine-block {
+    position: relative !important;
+    width: 92% !important;
+    height: 130px !important;
+    left: auto !important;
+    margin: 60px auto 10px auto !important;
+    display: block;
+  }
+  .nine-block-two {
+    position: relative !important;
+    width: 92% !important;
+    height: 130px !important;
+    right: auto !important;
+    margin: 10px auto !important;
+    display: block;
+  }
+  .tagr-one {
+    position: relative !important;
+    font-size: 1.3em !important;
+    left: auto !important;
+    margin-top: 10px !important;
+    display: block;
+    padding: 0 4%;
+  }
+  .tagr-two {
+    position: relative !important;
+    font-size: 1.3em !important;
+    right: auto !important;
+    margin-top: 10px !important;
+    display: block;
+    padding: 0 4%;
+  }
+  .new-org-nine {
+    position: relative !important;
+    left: auto !important;
+    margin: 10px 4% !important;
+    display: inline-block;
+  }
+  .new-org-nine-two {
+    position: relative !important;
+    right: auto !important;
+    margin: 10px 4% !important;
+    display: inline-block;
+  }
+  .new-nine {
+    position: relative !important;
+    left: auto !important;
+    margin-top: 0 !important;
+    font-size: 1.3em !important;
+    display: inline-block;
+  }
+  .new-nine-two {
+    position: relative !important;
+    right: auto !important;
+    margin-top: 0 !important;
+    font-size: 1.3em !important;
+    display: inline-block;
+  }
+  .nine-des-think {
+    position: relative !important;
+    font-size: 1.1em !important;
+    margin-top: 10px !important;
+    left: auto !important;
+    display: block;
+    padding: 0 4%;
+  }
+  .nine-des-think-two {
+    position: relative !important;
+    font-size: 1.1em !important;
+    margin-top: 10px !important;
+    right: auto !important;
+    display: block;
+    padding: 0 4%;
+  }
+  .cap-work {
+    position: relative !important;
+    font-size: 2.5em !important;
+    margin-top: 20px !important;
+    left: auto !important;
+    display: block;
+    text-align: center;
+  }
+  .credit {
+    position: relative !important;
+    font-size: 1.5em !important;
+    margin-top: 10px !important;
+    left: auto !important;
+    display: block;
+    text-align: center;
+  }
+  .here {
+    position: relative !important;
+    font-size: 1.5em !important;
+    margin-top: 10px !important;
+    left: auto !important;
+    display: block;
+    text-align: center;
+  }
+}

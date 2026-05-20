@@ -42,7 +42,6 @@
 #cookie-container .cookieLink:hover {
   color: #ffffff !important;
   background-color: #ff7b00 !important;
-  
 }
 
 #cookie-container .cookieLink::before {
@@ -102,7 +101,7 @@
     bottom: 15px !important;
     left: 15% !important;
     padding: 12px !important;
-    font-size: 120px !important;
+    font-size: 13px !important;
   }
 
   #cookie-container .cookieButton {

@@ -1,0 +1,475 @@
+/* ================================================================
+   responsive.css — Dwarakanath K Dinesh Portfolio
+   Final definitive edition — all devices, all images, all sections
+
+   IMPORT ORDER in App.css (already done):
+     import './App.css';
+     import './responsive.css';   ← must come AFTER App.css
+   ================================================================ */
+
+/* ── GLOBAL RESET ───────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+
+
+/* ================================================================
+   DESKTOP LARGE  1200px – 1399px
+   ================================================================ */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .name    { font-size: 13em !important; }
+  .the     { font-size: 20em !important; }
+  .pixel   { font-size: 20em !important; }
+  .perfect { font-size: 18em !important; }
+  .art     { font-size: 14em !important; }
+}
+
+
+/* ================================================================
+   TABLET  769px – 1199px
+   ================================================================ */
+@media (min-width: 769px) and (max-width: 1199px) {
+  /* HOME */
+  .pic-block, .pic-block-two, .pic-block-three { width: 28vw !important; height: 22vw !important; }
+  .image-og { width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important; }
+  .name       { font-size: clamp(5rem, 10vw, 9rem) !important; letter-spacing: -4px !important; }
+  .name-block { height: 200px !important; }
+  .tagger-one, .tagger-two, .tagger-three { font-size: clamp(0.9rem, 1.3vw, 1.2rem) !important; }
+  .tagger-des, .tagger-des-two, .tagger-des-three { font-size: clamp(0.75rem, 1vw, 1rem) !important; }
+  .menu-links a   { font-size: clamp(2.5rem, 5.5vw, 5rem) !important; }
+  .projects-title { font-size: clamp(2.5rem, 5vw, 5rem) !important; }
+  .project-name   { font-size: clamp(1.4rem, 2.5vw, 2.2rem) !important; }
+
+  /* SECOND */
+  .inter  { font-size: clamp(4rem, 7.5vw, 7rem) !important; }
+  .artist { font-size: clamp(3.5rem, 6.5vw, 6rem) !important; }
+  .pic-bay { width: 55vw !important; height: 65vh !important; right: 0 !important; }
+  .face    { width: 100% !important; height: 100% !important; object-fit: contain !important; display: block !important; }
+
+  /* THIRD */
+  .pic-side-boc { width: 36vw !important; height: 44vh !important; }
+  .boc-fill     { width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important; }
+  .text-one, .text-two, .text-three, .text-four { font-size: clamp(2.5rem, 4vw, 5rem) !important; left: 42% !important; }
+  .text-ablaz, .ablaz-two { font-size: clamp(1.2rem, 1.8vw, 2rem) !important; }
+
+  /* FOURTH */
+  .four-bloc { width: 68vw !important; }
+  .web       { font-size: clamp(3rem, 6vw, 7rem) !important; }
+  .yell-blocl { width: 30vw !important; height: 22vw !important; }
+  .yell-fill  { width: 100% !important; height: 100% !important; object-fit: contain !important; display: block !important; }
+
+  /* FIFTH */
+  .down-text  { font-size: clamp(1.2rem, 2vw, 2rem) !important; }
+  .big-block  { width: 52vw !important; height: 50vh !important; }
+  .con-bi     { width: 100% !important; height: 100% !important; object-fit: fill !important; display: block !important; }
+
+  /* SIX */
+  .column     { width: 22% !important; height: 170px !important; }
+  .st-head, .st-head-two { font-size: clamp(2rem, 3vw, 3.5rem) !important; }
+  .num, .num-two, .num-four { font-size: clamp(5rem, 9vw, 9rem) !important; }
+
+  /* SEVEN */
+  .the     { font-size: clamp(8rem, 17vw, 22rem) !important; left: 10% !important; }
+  .pixel   { font-size: clamp(8rem, 17vw, 22rem) !important; }
+  .perfect { font-size: clamp(6rem, 13vw, 20rem) !important; left: 18% !important; }
+  .sev-lov { width: 14vw !important; height: 35vh !important; }
+  .sev-pic { width: 100% !important; height: 100% !important; object-fit: contain !important; display: block !important; }
+  .blocker  { width: 44vw !important; height: 55vh !important; }
+  .blocker-fill { width: 100% !important; height: 100% !important; object-fit: fill !important; display: block !important; }
+
+  /* EIGHT */
+  .eight-bloc { width: 65vw !important; }
+  .art  { font-size: clamp(6rem, 12vw, 15rem) !important; }
+  .art-des, .com { font-size: clamp(1rem, 1.6vw, 1.8rem) !important; }
+  .slider__txt { font-size: clamp(1.2rem, 1.8vw, 2rem) !important; max-width: 80% !important; }
+
+  /* NINE */
+  .nine-block, .nine-block-two { width: 36vw !important; height: 28vh !important; }
+  .nine-fill { width: 100% !important; height: 100% !important; object-fit: contain !important; display: block !important; }
+  .cap-work  { font-size: clamp(2.5rem, 4.5vw, 5rem) !important; }
+  .credit, .here { font-size: clamp(1.5rem, 2.5vw, 2.8rem) !important; }
+
+  /* ABOUT */
+  .about-content { gap: 40px !important; }
+  .about-photo { width: 100% !important; height: 400px !important; object-fit: cover !important; display: block !important; }
+  .about-name  { font-size: clamp(2rem, 4vw, 3rem) !important; }
+
+  /* COOKIE */
+  #cookie-container.cookie-container { left: 15% !important; width: 70% !important; }
+}
+
+
+/* ================================================================
+   MOBILE  ≤768px — full vertical reflow, every image fixed
+   ================================================================ */
+@media (max-width: 768px) {
+
+  body { overflow-x: hidden !important; }
+  a::before { display: none !important; }
+
+  /* ── HOME ─────────────────────────────────────── */
+  .home {
+    position: relative !important;
+    height: auto !important;
+    min-height: 100vh;
+    overflow: visible !important;
+    padding-bottom: 100px;
+  }
+  .logo {
+    width: 58px !important; height: auto !important;
+    position: relative !important;
+    top: auto !important; left: auto !important; transform: none !important;
+    display: block; margin: 18px auto 0;
+  }
+  .hamburger { position: fixed !important; top: 18px !important; right: 5% !important; z-index: 10000; }
+  .location  {
+    position: relative !important;
+    left: auto !important; top: auto !important; transform: none !important;
+    font-size: 0.85em !important;
+    padding: 14px 4% 4px; display: block;
+  }
+  .line { display: none !important; }
+
+  /* HOME image containers */
+  .pic-block, .pic-block-two, .pic-block-three {
+    position: relative !important;
+    width: 92% !important; height: 210px !important;
+    left: auto !important; right: auto !important; top: auto !important;
+    margin: 10px auto !important;
+    display: block !important;
+    overflow: hidden;
+    transform: none !important;
+  }
+  .image-og {
+    position: relative !important;
+    width: 100% !important; height: 100% !important;
+    object-fit: cover !important; object-position: center !important;
+    display: block !important;
+  }
+
+  .tagger-one, .tagger-two, .tagger-three {
+    position: relative !important;
+    left: auto !important; right: auto !important; top: auto !important;
+    font-size: 1.1em !important; display: block; padding: 4px 4%; margin: 4px 0 !important;
+  }
+  .tagger-des, .tagger-des-two, .tagger-des-three {
+    position: relative !important;
+    left: auto !important; right: auto !important; top: auto !important;
+    font-size: 0.85em !important; display: block; padding: 2px 4%; margin: 2px 0 16px 0 !important;
+    line-height: 1.7;
+  }
+  .new        { position: relative !important; left: auto !important; top: auto !important; margin: 4px 4% !important; display: inline-block; }
+  .name-block { position: relative !important; width: 100% !important; height: auto !important; left: auto !important; top: auto !important; transform: none !important; padding: 10px 0; margin-top: 14px; }
+  .name       { position: relative !important; font-size: clamp(2.4rem, 11vw, 4rem) !important; left: auto !important; top: auto !important; transform: none !important; display: block; text-align: center; padding: 8px 0; letter-spacing: -2px !important; line-height: 1; }
+
+  /* MENU */
+  .menu-links    { padding: 0 6% !important; }
+  .menu-links a  { font-size: clamp(1.8rem, 9vw, 3rem) !important; display: block; padding: 6px 0; line-height: 1.35; }
+  .menu-close    { top: 16px !important; right: 5% !important; }
+  .menu-bottom   { position: relative !important; bottom: auto !important; padding: 20px 6%; display: flex; flex-direction: column; gap: 6px; text-align: center; }
+  .menu-bottom a, .menu-bottom span { font-size: 0.9em !important; }
+
+  /* PROJECTS / SKILLS OVERLAY */
+  .projects-overlay  { padding: 65px 4% 40px !important; overflow-y: auto !important; height: 100vh !important; }
+  .projects-title    { font-size: clamp(1.8rem, 8vw, 3rem) !important; margin-bottom: 16px !important; letter-spacing: -2px !important; }
+  .projects-close    { top: 16px !important; right: 5% !important; }
+  .project-item      { flex-direction: column !important; padding: 16px 0 !important; }
+  .project-number    { font-size: 1.2em !important; margin-bottom: 4px; }
+  .project-top       { flex-wrap: wrap; gap: 8px; }
+  .project-name      { font-size: clamp(1.1rem, 5vw, 1.6rem) !important; }
+  .project-desc, .project-stack { font-size: 0.85em !important; line-height: 1.65; }
+  .watch-videos-btn  { font-size: 0.88em !important; padding: 10px 18px !important; margin: 0 0 16px 0 !important; display: inline-block; }
+
+  /* ── SECOND ───────────────────────────────────── */
+  .second { height: auto !important; min-height: 100vh; position: relative; overflow: visible !important; padding-bottom: 30px; }
+  .sec-line, .sec-line-two, .sec-line-three { display: none !important; }
+  .inter  { position: relative !important; font-size: clamp(2.4rem, 11vw, 4.5rem) !important; margin-top: 80px !important; left: auto !important; letter-spacing: -3px !important; display: block; padding: 0 4%; }
+  .artist { position: relative !important; font-size: clamp(2rem, 9vw, 4rem) !important; margin-top: 10px !important; left: auto !important; display: block; padding: 0 4%; transform: scale(1, 1.2) !important; }
+  .pic-bay {
+    position: relative !important;
+    width: 100% !important; height: 300px !important;
+    right: auto !important; margin-top: 22px !important;
+    display: block !important; overflow: hidden;
+  }
+  .face {
+    position: relative !important;
+    width: 100% !important; height: 100% !important;
+    object-fit: cover !important; object-position: top center !important;
+    display: block !important;
+  }
+
+  /* ── THIRD ────────────────────────────────────── */
+  .third { height: auto !important; min-height: 100vh; position: relative; overflow: visible !important; padding-bottom: 30px; }
+  .third-line, .third-line-two, .third-line-three, .third-line-four { display: none !important; }
+  .pic-side-boc {
+    position: relative !important;
+    width: 92% !important; height: 260px !important;
+    left: auto !important; margin: 60px auto 16px auto !important;
+    display: block !important; overflow: hidden;
+  }
+  .boc-fill {
+    position: relative !important;
+    width: 100% !important; height: 100% !important;
+    object-fit: cover !important; object-position: center top !important;
+    display: block !important;
+  }
+  .text-one, .text-two, .text-three, .text-four {
+    position: relative !important;
+    font-size: clamp(1.6rem, 7vw, 2.5rem) !important;
+    left: auto !important; margin-top: 8px !important;
+    transform: scale(1, 1.12) !important; display: block; padding: 0 4%;
+  }
+  .block-a    { position: relative !important; left: auto !important; margin: 16px 4% !important; display: inline-block; }
+  .text-ablaz { position: relative !important; font-size: 1.05em !important; margin-top: 8px !important; left: auto !important; padding: 0 4%; display: block; line-height: 1.75; }
+  .ablaz-two  { position: relative !important; font-size: 1.05em !important; margin-top: 6px !important; left: auto !important; padding: 0 4%; display: block; line-height: 1.75; }
+
+  /* ── FOURTH ───────────────────────────────────── */
+  .fourth { height: auto !important; min-height: 100vh; position: relative; overflow: visible !important; padding-bottom: 40px; }
+  .four-bloc  { position: relative !important; width: 92% !important; height: auto !important; left: auto !important; margin: 60px auto 14px auto !important; padding: 18px; display: block !important; }
+  .web        { position: relative !important; font-size: clamp(2rem, 9vw, 3.5rem) !important; margin-top: 0 !important; left: auto !important; transform: scale(1, 1.15) !important; display: block; padding: 0 2%; }
+  .stamp      { display: none !important; }
+  .four-line, .four-line-two, .four-lin, .four-lin-del { display: none !important; }
+  .latest     { position: relative !important; font-size: clamp(1.6rem, 7vw, 2.5rem) !important; margin-top: 18px !important; left: auto !important; display: block; padding: 0 4%; letter-spacing: -2px !important; }
+  .des-lat    { position: relative !important; font-size: 1.1em !important; margin-top: 8px !important; left: auto !important; display: block; padding: 0 4%; line-height: 1.65; }
+  .tip        { position: relative !important; font-size: 1em !important; margin-top: 12px !important; left: auto !important; display: block; padding: 0 4%; }
+  .tp-des     { position: relative !important; font-size: 1em !important; margin-top: 4px !important; left: auto !important; display: block; padding: 0 4%; margin-bottom: 12px !important; }
+  .yell-blocl {
+    position: relative !important;
+    width: 92% !important; height: 200px !important;
+    left: auto !important; margin: 10px auto !important;
+    display: block !important; overflow: hidden;
+  }
+  .yell-fill  {
+    position: relative !important;
+    width: 100% !important; height: 100% !important;
+    object-fit: cover !important; display: block !important;
+  }
+  .think          { position: relative !important; font-size: clamp(1.8rem, 8vw, 3rem) !important; margin-top: 10px !important; left: auto !important; display: block; padding: 0 4%; letter-spacing: -2px !important; }
+  .new-org        { position: relative !important; margin: 10px 0 !important; left: auto !important; display: inline-block; margin-left: 4% !important; }
+  .new-des-think  { position: relative !important; font-size: 0.95em !important; margin-top: 8px !important; left: auto !important; display: block; padding: 0 4%; line-height: 1.65; }
+  .text-head-one  { position: relative !important; font-size: clamp(2rem, 8vw, 3.5rem) !important; margin-top: 20px !important; right: auto !important; display: block; padding: 0 4%; letter-spacing: -3px !important; }
+  .delivery       { position: relative !important; font-size: clamp(2.5rem, 10vw, 4.5rem) !important; margin-top: 6px !important; right: auto !important; transform: scale(1, 1.15) !important; display: block; padding: 0 4%; }
+  .block-a-four   { position: relative !important; right: auto !important; margin: 16px 4% !important; display: inline-block; }
+  .go-des         { position: relative !important; font-size: 1.1em !important; margin-top: 10px !important; right: auto !important; display: block; padding: 0 4%; line-height: 1.65; }
+  .go-des-two     { position: relative !important; font-size: 1.1em !important; margin-top: 6px !important; right: auto !important; display: block; padding: 0 4%; line-height: 1.65; margin-bottom: 16px !important; }
+
+  /* ── FIFTH ────────────────────────────────────── */
+  .five { height: auto !important; min-height: 100vh; position: relative; overflow: visible !important; padding-bottom: 40px; }
+  .down-text { position: relative !important; font-size: clamp(1.3rem, 5vw, 1.8rem) !important; margin-top: 70px !important; right: auto !important; display: block; padding: 0 4%; line-height: 1.8; }
+  .big-block {
+    position: relative !important;
+    width: 92% !important; height: 270px !important;
+    left: auto !important; margin: 20px auto !important;
+    display: block !important; overflow: hidden;
+  }
+  .big-block a {
+    display: block !important; position: relative !important;
+    width: 100% !important; height: 100% !important;
+  }
+  .con-bi {
+    position: relative !important;
+    width: 100% !important; height: 100% !important;
+    object-fit: cover !important; display: block !important;
+  }
+  .myButton { position: relative !important; font-size: 1.8em !important; padding: 18px 22px !important; margin-top: 16px !important; right: auto !important; display: inline-block; margin-left: 4% !important; }
+
+  /* ── SIX ──────────────────────────────────────── */
+  .six { height: auto !important; min-height: 100vh; position: relative; overflow: visible !important; padding-bottom: 40px; }
+  .six-line, .six-line-two { display: none !important; }
+  .row    { display: flex !important; flex-direction: column !important; padding-top: 65px !important; }
+  .column { float: none !important; width: 92% !important; height: auto !important; min-height: 100px; left: auto !important; top: auto !important; position: relative !important; margin: 0 auto !important; padding: 20px 14px !important; border-bottom: 1px solid #1c1b19; display: flex; flex-direction: column; gap: 4px; }
+  .sotd, .sotd-two, .sotd-three { position: relative !important; font-size: 0.9em !important; left: auto !important; display: block; }
+  .st-head, .st-head-two  { position: relative !important; font-size: clamp(1.8rem, 7vw, 2.5rem) !important; top: auto !important; left: auto !important; display: block; letter-spacing: -2px; margin-top: 4px; }
+  .num, .num-two, .num-four { position: relative !important; font-size: clamp(3.5rem, 14vw, 6rem) !important; right: auto !important; display: block; text-align: right; line-height: 1; }
+
+  /* ── SEVEN ────────────────────────────────────── */
+  .seven { height: auto !important; min-height: 100vh; position: relative; overflow: visible !important; padding-bottom: 30px; }
+  .sev-lov {
+    position: relative !important;
+    width: 46% !important; height: 190px !important;
+    left: auto !important; margin: 60px auto 10px auto !important;
+    display: block !important; overflow: hidden;
+  }
+  .sev-pic {
+    position: relative !important;
+    width: 100% !important; height: 100% !important;
+    object-fit: contain !important; display: block !important;
+  }
+  .the    { position: relative !important; font-size: clamp(3.5rem, 18vw, 7rem) !important; left: auto !important; margin-top: 0 !important; letter-spacing: -5px !important; display: block; text-align: center; }
+  .pixel  { position: relative !important; font-size: clamp(3.5rem, 18vw, 7rem) !important; left: auto !important; margin-top: 0 !important; letter-spacing: -5px !important; display: block; text-align: center; }
+  .blocker {
+    position: relative !important;
+    width: 92% !important; height: 270px !important;
+    right: auto !important; margin: 16px auto !important;
+    display: block !important; overflow: hidden;
+  }
+  .blocker-fill {
+    position: relative !important;
+    width: 100% !important; height: 100% !important;
+    object-fit: cover !important; display: block !important;
+  }
+  .throp {
+    position: relative !important;
+    width: 62% !important; height: 150px !important;
+    left: auto !important; margin: 14px auto !important;
+    display: block !important; overflow: hidden;
+  }
+  /* CRITICAL: .thr had width:0% in the desktop CSS — image was invisible */
+  .thr {
+    position: relative !important;
+    width: 100% !important; height: 100% !important;
+    object-fit: contain !important; display: block !important;
+  }
+  .perfect { position: relative !important; font-size: clamp(3rem, 16vw, 6.5rem) !important; left: auto !important; margin-top: 0 !important; letter-spacing: -5px !important; display: block; text-align: center; }
+
+  /* ── EIGHT ────────────────────────────────────── */
+  .eight { height: auto !important; min-height: 100vh; position: relative; overflow: visible !important; padding-bottom: 40px; }
+  .eight-bloc { position: relative !important; width: 92% !important; height: auto !important; left: auto !important; margin: 60px auto 16px auto !important; padding: 18px; display: block !important; }
+  .art     { position: relative !important; font-size: clamp(3rem, 14vw, 6rem) !important; margin-top: 0 !important; left: auto !important; transform: scale(1, 1.15) !important; display: block; padding: 0 2%; }
+  .art-des { position: relative !important; font-size: 1.1em !important; margin-top: 10px !important; right: auto !important; display: block; padding: 0 4%; line-height: 1.8; }
+  .awwwards { position: relative !important; font-size: clamp(1.8rem, 8vw, 3rem) !important; margin-top: 10px !important; right: auto !important; display: block; padding: 0 4%; }
+  .com      { position: relative !important; font-size: 1.05em !important; margin-top: 10px !important; right: auto !important; display: block; padding: 0 4%; line-height: 1.75; }
+  .testimonials-section { position: relative !important; top: 0 !important; height: auto !important; min-height: 310px; margin-top: 20px; width: 100%; overflow: hidden; }
+  .slider__txt     { font-size: 1.1em !important; max-width: 90% !important; padding: 0 10px; line-height: 1.7; }
+  .slider__caption { font-size: 0.95em !important; }
+  .slider__nav     { margin: 16px 7px !important; width: 10px; height: 10px; }
+  quote            { font-size: 3.2em !important; }
+
+  /* ── NINE ─────────────────────────────────────── */
+  .nine { height: auto !important; min-height: 100vh; position: relative; overflow: visible !important; padding-bottom: 40px; }
+  .nine-line, .nine-line-two, .nine-line-three { display: none !important; }
+  .nine-block {
+    position: relative !important;
+    width: 92% !important; height: 200px !important;
+    left: auto !important; right: auto !important;
+    margin: 60px auto 10px auto !important;
+    display: block !important; overflow: hidden;
+  }
+  .nine-block-two {
+    position: relative !important;
+    width: 92% !important; height: 200px !important;
+    left: auto !important; right: auto !important;
+    margin: 10px auto !important;
+    display: block !important; overflow: hidden;
+  }
+  .nine-fill {
+    position: relative !important;
+    width: 100% !important; height: 100% !important;
+    object-fit: cover !important; display: block !important;
+  }
+  .tagr-one       { position: relative !important; font-size: 1.05em !important; left: auto !important; margin-top: 8px !important; display: block; padding: 0 4%; }
+  .tagr-two       { position: relative !important; font-size: 1.05em !important; right: auto !important; margin-top: 8px !important; display: block; padding: 0 4%; }
+  .new-org-nine   { position: relative !important; left: auto !important; margin: 8px 4% !important; display: inline-block; }
+  .new-org-nine-two { position: relative !important; right: auto !important; margin: 8px 4% !important; display: inline-block; }
+  .new-nine       { position: relative !important; left: auto !important; font-size: 0.95em !important; display: inline-block; }
+  .new-nine-two   { position: relative !important; right: auto !important; font-size: 0.95em !important; display: inline-block; }
+  .nine-des-think { position: relative !important; font-size: 0.9em !important; margin-top: 8px !important; left: auto !important; display: block; padding: 0 4%; line-height: 1.7; }
+  .nine-des-think-two { position: relative !important; font-size: 0.9em !important; margin-top: 8px !important; right: auto !important; display: block; padding: 0 4%; line-height: 1.7; }
+  .cap-work { position: relative !important; font-size: clamp(2rem, 9vw, 3rem) !important; margin-top: 24px !important; left: auto !important; display: block; text-align: center; }
+  .credit   { position: relative !important; font-size: 1.2em !important; margin-top: 10px !important; left: auto !important; display: block; text-align: center; line-height: 1.6; }
+  .here     { position: relative !important; font-size: 1.2em !important; margin-top: 10px !important; left: auto !important; display: block; text-align: center; margin-bottom: 14px; }
+
+  /* ── LAST ─────────────────────────────────────── */
+  .last { height: auto !important; min-height: 30vh; position: relative; overflow: visible !important; padding-bottom: 30px; }
+  .last-line, .last-line-two { display: none !important; }
+  .chaniru  { position: relative !important; margin-top: 22px !important; overflow: hidden; }
+  .img1     { font-size: 3em !important; }
+  .last-blk { position: relative !important; width: 92% !important; height: auto !important; left: auto !important; margin: 16px auto !important; padding: 14px; box-sizing: border-box; }
+  .names    { position: relative !important; margin-top: 12px !important; left: auto !important; display: block; padding: 0 4%; font-size: 0.9em !important; }
+  .legal    { position: relative !important; width: 50px !important; height: auto !important; left: auto !important; top: auto !important; margin: 10px 4% !important; display: block !important; object-fit: contain; }
+  .last-link-one, .last-link-two, .last-link-three { position: relative !important; font-size: 1.1em !important; margin: 10px 4% !important; right: auto !important; left: auto !important; display: inline-block; }
+
+  /* ── ABOUT OVERLAY ────────────────────────────── */
+  .about-overlay  { padding: 60px 4% 30px !important; overflow-y: auto !important; }
+  .about-content  { flex-direction: column !important; gap: 24px !important; }
+  .about-left     { width: 100% !important; flex: none !important; }
+  .about-photo    { position: relative !important; width: 100% !important; height: 320px !important; object-fit: cover !important; object-position: center top !important; display: block !important; border-radius: 8px; }
+  .about-right    { width: 100% !important; flex: none !important; gap: 12px !important; }
+  .about-name     { font-size: clamp(2rem, 8vw, 3rem) !important; letter-spacing: -2px !important; }
+  .about-role, .about-tag { font-size: 0.95em !important; }
+  .about-bio      { font-size: 0.9em !important; line-height: 1.8; }
+  .about-links    { flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .about-btn      { font-size: 0.88em !important; padding: 10px 16px !important; }
+  .about-close    { font-size: 1.2em !important; }
+
+  /* ── CONTACT ──────────────────────────────────── */
+  .contact-switch { bottom: 18px !important; right: 18px !important; padding: 10px 14px !important; }
+  .contact-label  { font-size: 0.85em !important; }
+  .dialog-overlay { padding: 6px !important; align-items: flex-end !important; }
+  .dialog-box     { width: 100% !important; max-width: 100% !important; max-height: 90vh; overflow-y: auto; padding: 22px 14px !important; border-radius: 14px 14px 0 0 !important; }
+  .form-title { font-size: 1.5em !important; }
+  .form-sub   { font-size: 0.85em !important; }
+  .form_style { font-size: 0.92em !important; padding: 10px !important; }
+  .btn        { width: 100% !important; font-size: 0.95em !important; padding: 13px !important; }
+  .quick-links { flex-direction: column; gap: 8px; }
+  .quick-btn   { text-align: center !important; padding: 11px !important; font-size: 0.85em !important; }
+
+  /* ── HIRE ME ──────────────────────────────────── */
+  .hire-btn { bottom: 18px !important; left: 14px !important; width: 80px !important; height: 50px !important; font-size: 0.95em !important; line-height: 44px !important; }
+
+  /* ── COOKIE BANNER ────────────────────────────── */
+  #cookie-container.cookie-container { width: 92% !important; bottom: 10px !important; left: 4% !important; right: 4% !important; padding: 14px !important; font-size: 11px !important; }
+  #cookie-container .cookieButton    { padding: 9px 12px !important; width: 100% !important; }
+  #buttonContainer                   { flex-direction: column !important; gap: 8px !important; }
+
+  /* ── INTRO ────────────────────────────────────── */
+  .intro-wrapper { padding: 0 6% !important; }
+  .intro-name    { font-size: clamp(2rem, 11vw, 4.5rem) !important; letter-spacing: -3px; }
+  .intro-title   { font-size: clamp(0.85rem, 3.5vw, 1.2rem) !important; }
+
+  /* ── VIDEOS OVERLAY ───────────────────────────── */
+  .vg-overlay   { padding-top: 55px !important; }
+  .vg-title     { font-size: clamp(1.5rem, 7vw, 2.4rem) !important; }
+  .vg-sub       { font-size: 0.8em !important; }
+  .video-slider { height: 440px !important; }
+  .video-slider__slide { width: 250px !important; height: 350px !important; }
+  .vg-modal-box   { width: 96% !important; }
+  .vg-modal-video { max-height: 50vh !important; }
+  .vg-prev, .vg-next { width: 38px !important; height: 38px !important; font-size: 1.3em !important; }
+}
+
+
+/* ================================================================
+   SMALL MOBILE  ≤480px
+   ================================================================ */
+@media (max-width: 480px) {
+  .name    { font-size: clamp(1.9rem, 13vw, 3.2rem) !important; }
+  .inter   { font-size: clamp(1.9rem, 11vw, 3rem) !important; }
+  .artist  { font-size: clamp(1.7rem, 9vw, 2.6rem) !important; }
+  .the, .pixel { font-size: clamp(2.8rem, 18vw, 5rem) !important; letter-spacing: -3px !important; }
+  .perfect     { font-size: clamp(2.4rem, 15vw, 4.5rem) !important; letter-spacing: -3px !important; }
+  .menu-links a { font-size: clamp(1.6rem, 9vw, 2.5rem) !important; }
+  .pic-block, .pic-block-two, .pic-block-three { height: 185px !important; }
+  .pic-bay       { height: 250px !important; }
+  .pic-side-boc  { height: 210px !important; }
+  .big-block     { height: 220px !important; }
+  .blocker       { height: 220px !important; }
+  .yell-blocl    { height: 160px !important; }
+  .nine-block, .nine-block-two { height: 175px !important; }
+  .about-photo   { height: 270px !important; }
+  .sev-lov       { height: 160px !important; }
+  .throp         { height: 130px !important; }
+  .hire-btn { width: 70px !important; height: 44px !important; font-size: 0.85em !important; line-height: 38px !important; left: 12px !important; bottom: 16px !important; }
+  .dialog-box { padding: 18px 12px !important; }
+  .form-title { font-size: 1.3em !important; }
+}
+
+
+/* ================================================================
+   ULTRA SMALL  ≤360px
+   ================================================================ */
+@media (max-width: 360px) {
+  .name       { font-size: clamp(1.6rem, 12vw, 2.6rem) !important; }
+  .intro-name { font-size: clamp(1.6rem, 12vw, 2.8rem) !important; }
+  .pic-block, .pic-block-two, .pic-block-three,
+  .big-block, .blocker  { height: 160px !important; }
+  .nine-block, .nine-block-two { height: 150px !important; }
+  .pic-bay, .pic-side-boc      { height: 200px !important; }
+  .about-photo { height: 220px !important; }
+}

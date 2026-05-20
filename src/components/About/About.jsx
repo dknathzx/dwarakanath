@@ -6,6 +6,7 @@ import "./About.css";
 const About = ({ open, onClose }) => {
   return (
     <AnimatePresence>
+        
       {open && (
         <motion.div
           className="about-overlay"
@@ -15,6 +16,7 @@ const About = ({ open, onClose }) => {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="about-close" onClick={onClose}>X</div>
+          
 
           <motion.div
             className="about-content"
@@ -47,6 +49,7 @@ const About = ({ open, onClose }) => {
                 <a href="https://linkedin.com/in/dwarakanathk" target="_blank" rel="noreferrer" className="about-btn">LinkedIn</a>
                 <a href="https://github.com/dknathzx" target="_blank" rel="noreferrer" className="about-btn">GitHub</a>
                 <a href="mailto:dknathzx@gmail.com" className="about-btn">Email</a>
+                
               </div>
             </div>
 

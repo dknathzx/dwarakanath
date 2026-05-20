@@ -1,7 +1,7 @@
 import React from "react";
 import "./nine.css";
-import fill1 from  "../assets/vector6.jpeg";
-import fill2 from  "../assets/vector5.jpeg";
+import fill1 from "../assets/vector6.png";
+import fill2 from "../assets/img7.jpg";
 export const Nine = () => {
   return (<div className="nine">
         <div className="nine-line"></div>

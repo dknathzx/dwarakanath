@@ -1,97 +1,244 @@
-.six{
-    height: 100vh;
-}
-.six-line{
-    margin-top: 6%;
-    width: 100%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
-    position: absolute;
-}
-.column {
+/* ================================================================
+   six.css — REBUILT WITH FLEXBOX (MOBILE-FIRST)
+   Replace your existing six.css with this file
+   ================================================================ */
+
+/* ===== BASE MOBILE STYLES (DEFAULT) ===== */
+.six {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  left: 10px;
-  top: 150px;
-  float: left;
-  width: 23%;
-  padding: 10px;
-  height: 130px;
+  padding: 80px 0 40px 0;
+  background: #f9f7f4;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.sotd{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 2em;
-    font-family: gramlight;
-    text-transform: uppercase;
-}
-.st-head{
-    position: absolute;
-    font-size: 4em;
-    color: #1c1b19;
-    font-family: scari;
-    letter-spacing: -3px;
-    text-transform: uppercase;
-    top: 50px;
-    left: 10px;
-}
-.num{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 10em;
-    font-family: scari;
-    right: 50px;
-}
-.sotd-two{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 2em;
-    font-family: gramlight;
-    text-transform: uppercase;
-    left: 20px;
-}
-.st-head-two{
-    position: absolute;
-    font-size: 4.6em;
-    color: #1c1b19;
-    font-family: scari;
-    letter-spacing: -3px;
-    text-transform: uppercase;
-    top: 50px;
-    left: 20px;
-}
-.num-two{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 10em;
-    font-family: scari;
-    right: 30px;
 
+/* DECORATIVE LINES - HIDDEN ON MOBILE */
+.six-line,
+.six-line-two {
+  display: none;
 }
-.num-four{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 10em;
-    font-family: scari;
-    right: 20px;
 
+/* ROW AND COLUMNS */
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
 }
-.sotd-three{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 2em;
-    font-family: gramlight;
-    text-transform: uppercase;
-    left: 20px;
+
+.column {
+  width: 90%;
+  margin: 0 auto 25px auto;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(28, 27, 25, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.six-line-two{
-    margin-top: 8%;
+
+/* LABELS */
+.sotd,
+.sotd-two,
+.sotd-three {
+  color: #1c1b19;
+  font-size: 1.1em;
+  font-family: gramlight;
+  text-transform: uppercase;
+  order: 1;
+}
+
+/* HEADINGS */
+.st-head,
+.st-head-two {
+  font-size: 2.5em;
+  color: #1c1b19;
+  font-family: scari;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  order: 2;
+}
+
+/* NUMBERS */
+.num,
+.num-two,
+.num-four {
+  color: #1c1b19;
+  font-size: 4em;
+  font-family: scari;
+  text-align: right;
+  order: 3;
+  margin-top: 5px;
+}
+
+/* ===== TABLET (768px+) ===== */
+@media (min-width: 768px) {
+  .six {
+    padding: 100px 0 60px 0;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .column {
     width: 100%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
+    margin: 0;
+    padding: 25px;
+  }
+  
+  .sotd,
+  .sotd-two,
+  .sotd-three {
+    font-size: 1.3em;
+  }
+  
+  .st-head,
+  .st-head-two {
+    font-size: 3em;
+  }
+  
+  .num,
+  .num-two,
+  .num-four {
+    font-size: 5em;
+  }
+}
+
+/* ===== DESKTOP SMALL (1024px+) ===== */
+@media (min-width: 1024px) {
+  .six {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 96%;
+    margin: 0 auto;
+  }
+  
+  .column {
+    flex: 1;
+    width: auto;
+    height: 200px;
+    margin: 0;
+    padding: 20px;
+    border-bottom: none;
+    display: block;
+    position: relative;
+  }
+  
+  .sotd,
+  .sotd-two,
+  .sotd-three {
     position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 1.6em;
+  }
+  
+  .st-head {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    font-size: 3.5em;
+    letter-spacing: -3px;
+  }
+  
+  .st-head-two {
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    font-size: 3.8em;
+    letter-spacing: -3px;
+  }
+  
+  .num {
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    font-size: 8em;
+  }
+  
+  .num-two {
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    font-size: 8em;
+  }
+  
+  .num-four {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 8em;
+  }
+  
+  /* SHOW DECORATIVE LINES ON DESKTOP */
+  .six-line {
+    display: block;
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #1c1b19;
+  }
+  
+  .six-line-two {
+    display: block;
+    position: absolute;
+    bottom: 6%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #1c1b19;
+  }
+}
+
+/* ===== DESKTOP LARGE (1400px+) ===== */
+@media (min-width: 1400px) {
+  .column {
+    height: 220px;
+    padding: 25px;
+  }
+  
+  .sotd,
+  .sotd-two,
+  .sotd-three {
+    font-size: 2em;
+  }
+  
+  .st-head {
+    font-size: 4em;
+  }
+  
+  .st-head-two {
+    font-size: 4.6em;
+  }
+  
+  .num,
+  .num-two,
+  .num-four {
+    font-size: 10em;
+  }
+  
+  .num {
+    right: 50px;
+  }
+  
+  .num-two {
+    right: 30px;
+  }
 }

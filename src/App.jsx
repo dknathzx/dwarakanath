@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import CookieBanner from "./components/CookieBanner/CookieBanner";
 import HireMe from "./components/HireMe/HireMe";
-import '../src/App.css';
 import Intro from "./components/intro/intro";
 import Contact from "./components/Contact/Contact";
 import PageTransition from "./components/PageTransition/PageTransition";
@@ -15,6 +14,8 @@ import Seven from "./components/Seven/Seven";
 import Eight from "./components/Eight/Eight";
 import Nine from "./components/Nine/Nine";
 import Last from "./components/Last/Last";
+import '../src/App.css';
+import '../src/responsive.css';
 
 const App = () => {
   const [introComplete, setIntroComplete] = useState(false);
